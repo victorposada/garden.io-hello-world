@@ -1,0 +1,48 @@
+
+[2024-12-21T10:40:40.684Z] [debug] Registering session with the Garden dashboard for 255825ae-35a0-41b3-9e8b-e2300f2acd58 in remote/vote-demo-quickstart-hoid.
+
+[2024-12-21T10:40:40.815Z] [debug] Successfully registered session with the Garden dashboard.
+
+[2024-12-21T10:40:40.816Z] View command results at: https://app.garden.io/go/command/8vx7aoF89N
+
+[2024-12-21T10:40:40.823Z] Resolving providers...
+
+[2024-12-21T10:40:41.009Z] Configuring provider...
+
+[2024-12-21T10:40:41.010Z] [debug] Configuring provider...
+
+[2024-12-21T10:40:41.010Z] [debug] Configuring provider...
+
+[2024-12-21T10:40:41.016Z] Provider configured
+
+[2024-12-21T10:40:41.016Z] [debug] Provider configured
+
+[2024-12-21T10:40:41.017Z] [debug] Provider configured
+
+[2024-12-21T10:40:41.025Z] [debug] Provider status cached
+
+[2024-12-21T10:40:41.026Z] [verbose] resolve provider templated is ready.
+
+[2024-12-21T10:40:41.027Z] [debug] Provider status cached
+
+[2024-12-21T10:40:41.027Z] [verbose] resolve provider container is ready.
+
+[2024-12-21T10:40:41.027Z] Configuring provider...
+
+[2024-12-21T10:40:41.029Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:40:41.030Z] Provider configured
+
+[2024-12-21T10:40:41.031Z] Provider status cached
+
+[2024-12-21T10:40:41.031Z] [verbose] resolve provider exec is ready.
+
+[2024-12-21T10:40:41.329Z] [debug] Done flushing all events and log entries.
+
+[2024-12-21T10:40:42.098Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:40:42.100Z] 
+See .garden/error.log for detailed error message

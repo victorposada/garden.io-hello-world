@@ -1,0 +1,79 @@
+
+[2024-12-21T10:41:47.786Z] [debug] Registering session with the Garden dashboard for 255825ae-35a0-41b3-9e8b-e2300f2acd58 in remote/vote-demo-quickstart-hoid.
+
+[2024-12-21T10:41:47.876Z] [debug] Successfully registered session with the Garden dashboard.
+
+[2024-12-21T10:41:47.876Z] View command results at: https://app.garden.io/go/command/8vt0rL9agq
+
+[2024-12-21T10:41:47.880Z] Resolving providers...
+
+[2024-12-21T10:41:48.043Z] Configuring provider...
+
+[2024-12-21T10:41:48.044Z] [debug] Configuring provider...
+
+[2024-12-21T10:41:48.044Z] [debug] Configuring provider...
+
+[2024-12-21T10:41:48.050Z] Provider configured
+
+[2024-12-21T10:41:48.050Z] [debug] Provider configured
+
+[2024-12-21T10:41:48.050Z] [debug] Provider configured
+
+[2024-12-21T10:41:48.052Z] [debug] Provider status cached
+
+[2024-12-21T10:41:48.053Z] [verbose] resolve provider templated is ready.
+
+[2024-12-21T10:41:48.054Z] [debug] Provider status cached
+
+[2024-12-21T10:41:48.054Z] [verbose] resolve provider container is ready.
+
+[2024-12-21T10:41:48.055Z] Configuring provider...
+
+[2024-12-21T10:41:48.056Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:41:48.057Z] Provider configured
+
+[2024-12-21T10:41:48.058Z] Provider status cached
+
+[2024-12-21T10:41:48.058Z] [verbose] resolve provider exec is ready.
+
+[2024-12-21T10:41:48.159Z] [debug] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2024-12-21T10:41:48.243Z] Provider ready
+
+[2024-12-21T10:41:48.245Z] [verbose] resolve provider kubernetes is ready.
+
+[2024-12-21T10:41:48.247Z] Finished resolving providers (took 0.4 sec)
+
+[2024-12-21T10:41:48.247Z] Some provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-21T10:41:48.248Z] Resolving actions and modules...
+
+[2024-12-21T10:41:48.252Z] [debug] Building graph from 0 action configs and 0 group configs
+
+[2024-12-21T10:41:48.252Z] [debug] Retained 0 configs
+
+[2024-12-21T10:41:48.252Z] [debug] Got 0 action configs without action filter
+
+[2024-12-21T10:41:48.252Z] [debug] Finding minimal roots for 0 paths
+
+[2024-12-21T10:41:48.254Z] Finished resolving graph (took 0 sec)
+
+[2024-12-21T10:41:48.254Z] Finished initializing Garden (took 1.1 sec)
+
+
+[2024-12-21T10:41:48.255Z] Nothing to deploy. Aborting.
+
+[2024-12-21T10:41:48.478Z] [debug] Done flushing all events and log entries.
+
+[2024-12-21T10:41:48.528Z] 
+View command results at: 
+
+https://app.garden.io/go/command/8vt0rL9agq 
+
+
+[2024-12-21T10:41:48.528Z] [debug] Watcher: Initializing
+
+[2024-12-21T10:41:48.528Z] [debug] Watcher: Starting FSWatcher

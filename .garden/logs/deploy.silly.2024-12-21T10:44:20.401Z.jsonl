@@ -1,0 +1,328 @@
+{"msg":"Registering session with the Garden dashboard for 255825ae-35a0-41b3-9e8b-e2300f2acd58 in remote/vote-demo-quickstart-hoid.","section":"","timestamp":"2024-12-21T10:44:20.407Z","level":"debug"}
+{"msg":"Successfully registered session with the Garden dashboard.","section":"","timestamp":"2024-12-21T10:44:20.534Z","level":"debug"}
+{"msg":"View command results at: https://app.garden.io/go/command/TcwOVjCoDR","section":"garden-dashboard          →","timestamp":"2024-12-21T10:44:20.534Z","level":"info"}
+{"msg":"Resolving providers...","section":"providers                 →","timestamp":"2024-12-21T10:44:20.537Z","level":"info"}
+{"msg":"Configuring provider...","section":"exec                      →","timestamp":"2024-12-21T10:44:20.711Z","level":"info"}
+{"msg":"Configuring provider...","section":"templated                 →","timestamp":"2024-12-21T10:44:20.712Z","level":"debug"}
+{"msg":"Configuring provider...","section":"container                 →","timestamp":"2024-12-21T10:44:20.712Z","level":"debug"}
+{"msg":"Provider configured","section":"exec                      →","timestamp":"2024-12-21T10:44:20.718Z","level":"info"}
+{"msg":"Provider configured","section":"templated                 →","timestamp":"2024-12-21T10:44:20.719Z","level":"debug"}
+{"msg":"Provider configured","section":"container                 →","timestamp":"2024-12-21T10:44:20.720Z","level":"debug"}
+{"msg":"Provider ready","section":"exec                      →","timestamp":"2024-12-21T10:44:20.729Z","level":"info"}
+{"msg":"Provider ready","section":"templated                 →","timestamp":"2024-12-21T10:44:20.730Z","level":"debug"}
+{"msg":"Provider ready","section":"container                 →","timestamp":"2024-12-21T10:44:20.730Z","level":"debug"}
+{"msg":"resolve provider templated is ready.","section":"providers                 →","timestamp":"2024-12-21T10:44:20.731Z","level":"verbose"}
+{"msg":"resolve provider exec is ready.","section":"providers                 →","timestamp":"2024-12-21T10:44:20.732Z","level":"verbose"}
+{"msg":"resolve provider container is ready.","section":"providers                 →","timestamp":"2024-12-21T10:44:20.732Z","level":"verbose"}
+{"msg":"Configuring provider...","section":"kubernetes                →","timestamp":"2024-12-21T10:44:20.733Z","level":"info"}
+{"msg":"You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.\n\nFor guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s","section":"kubernetes                →","timestamp":"2024-12-21T10:44:20.735Z","level":"warn"}
+{"msg":"Provider configured","section":"kubernetes                →","timestamp":"2024-12-21T10:44:20.736Z","level":"info"}
+{"msg":"Kubernetes: Getting API resource info for group networking.k8s.io/v1","section":"kubernetes                →","timestamp":"2024-12-21T10:44:20.835Z","level":"debug"}
+{"msg":"Provider ready","section":"kubernetes                →","timestamp":"2024-12-21T10:44:20.901Z","level":"info"}
+{"msg":"resolve provider kubernetes is ready.","section":"providers                 →","timestamp":"2024-12-21T10:44:20.903Z","level":"verbose"}
+{"msg":"Finished resolving providers (took 0.4 sec)","section":"providers                 →","timestamp":"2024-12-21T10:44:20.905Z","level":"info"}
+{"msg":"Resolving actions and modules...","section":"graph                     →","timestamp":"2024-12-21T10:44:20.905Z","level":"info"}
+{"msg":"Building graph from 3 action configs and 0 group configs","section":"graph                     →","timestamp":"2024-12-21T10:44:20.909Z","level":"debug"}
+{"msg":"Retained 3 configs","section":"graph                     →","timestamp":"2024-12-21T10:44:20.910Z","level":"debug"}
+{"msg":"Got 3 action configs without action filter","section":"graph                     →","timestamp":"2024-12-21T10:44:20.935Z","level":"debug"}
+{"msg":"Finding minimal roots for 1 paths","section":"graph                     →","timestamp":"2024-12-21T10:44:20.936Z","level":"debug"}
+{"msg":"Scanning Deploy action db root at /home/hoid/Documents/garden.io-hello-world/postgres\n  → Includes: (none)\n  → Excludes: (none)","section":"git                       →","timestamp":"2024-12-21T10:44:20.945Z","level":"verbose"}
+{"msg":"Found 1 files in Deploy action db root /home/hoid/Documents/garden.io-hello-world/postgres (took 0.02 sec)","section":"git                       →","timestamp":"2024-12-21T10:44:20.961Z","level":"verbose"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres, filtering by 1 include and 0 exclude globs","section":"graph                     →","timestamp":"2024-12-21T10:44:20.962Z","level":"debug"}
+{"msg":"Include globs: **/*","section":"graph                     →","timestamp":"2024-12-21T10:44:20.962Z","level":"debug"}
+{"msg":"No exclude globs","section":"graph                     →","timestamp":"2024-12-21T10:44:20.962Z","level":"debug"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres after glob matching","section":"graph                     →","timestamp":"2024-12-21T10:44:20.963Z","level":"debug"}
+{"msg":"Finished resolving graph (took 0.1 sec)","section":"graph                     →","timestamp":"2024-12-21T10:44:20.965Z","level":"info"}
+{"msg":"Finished initializing Garden (took 1.3 sec)","section":"garden                    →","timestamp":"2024-12-21T10:44:20.965Z","level":"info"}
+{"msg":"resolve Deploy type=helm name=db is ready.","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:20.974Z","level":"debug"}
+{"msg":"Getting status for Deploy db (type helm) at version v-b4bbcc161f...","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:20.975Z","level":"info"}
+{"msg":"Status is missing, db will be deployed","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:21.075Z","level":"info"}
+{"msg":"Deploying db (type helm) at version v-b4bbcc161f...","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:21.077Z","level":"info"}
+{"msg":"Installing Helm release db","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:25.703Z","level":"debug"}
+{"msg":"Waiting for resources to be ready...","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:25.703Z","level":"info"}
+{"msg":"Waiting for resources to be ready...","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:25.703Z","level":"verbose"}
+{"msg":"Kubernetes: Getting API resource info for group v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.704Z","level":"debug"}
+{"msg":"Kubernetes: Getting API resource info for group apps/v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.705Z","level":"debug"}
+{"msg":"Status of Secret postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.832Z","level":"debug"}
+{"msg":"Status of Secret postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.832Z","level":"verbose"}
+{"msg":"Status of Service postgres-hl is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"debug"}
+{"msg":"Status of Service postgres-hl is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"verbose"}
+{"msg":"Status of Service postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"debug"}
+{"msg":"Status of Service postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:27.833Z","level":"verbose"}
+{"msg":"Status of Secret postgres is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.481Z","level":"debug"}
+{"msg":"Status of Secret postgres is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.481Z","level":"verbose"}
+{"msg":"Status of Service postgres-hl is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.481Z","level":"debug"}
+{"msg":"Status of Service postgres-hl is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.481Z","level":"verbose"}
+{"msg":"Status of Service postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.482Z","level":"debug"}
+{"msg":"Status of Service postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.482Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.482Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"missing\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:30.482Z","level":"verbose"}
+{"msg":"Status of Service postgres-hl is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.659Z","level":"debug"}
+{"msg":"Status of Service postgres-hl is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"verbose"}
+{"msg":"Status of Service postgres is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"debug"}
+{"msg":"Status of Service postgres is \"ready\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"verbose"}
+{"msg":"StatefulSet/postgres: Pulling image \"docker.io/bitnami/postgresql:15.3.0-debian-11-r24\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.660Z","level":"info"}
+{"msg":"StatefulSet/postgres: Pulling image \"docker.io/bitnami/postgresql:15.3.0-debian-11-r24\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:33.661Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:37.652Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:37.653Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:41.847Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:41.847Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:46.542Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:46.543Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:51.683Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:51.683Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:57.342Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:57.343Z","level":"verbose"}
+{"msg":"StatefulSet/postgres: Started container postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:57.343Z","level":"info"}
+{"msg":"StatefulSet/postgres: Started container postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:44:57.343Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:03.488Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:03.488Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:10.148Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:10.148Z","level":"verbose"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:17.326Z","level":"debug"}
+{"msg":"Status of StatefulSet postgres is \"deploying\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:17.326Z","level":"verbose"}
+{"msg":"NAME: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.809Z","level":"verbose"}
+{"msg":"LAST DEPLOYED: Sat Dec 21 11:44:29 2024","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.810Z","level":"verbose"}
+{"msg":"NAMESPACE: default","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.810Z","level":"verbose"}
+{"msg":"STATUS: deployed","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.810Z","level":"verbose"}
+{"msg":"REVISION: 1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.810Z","level":"verbose"}
+{"msg":"TEST SUITE: None","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.810Z","level":"verbose"}
+{"msg":"NOTES:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"CHART NAME: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"CHART VERSION: 12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"APP VERSION: 15.3.0","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"** Please be patient while the chart is being deployed **","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"PostgreSQL can be accessed via port 5432 on the following DNS names from within your cluster:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"postgres.default.svc.cluster.local - Read/Write connection","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.811Z","level":"verbose"}
+{"msg":"To get the password for \"postgres\" run:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.812Z","level":"verbose"}
+{"msg":"export POSTGRES_PASSWORD=$(kubectl get secret --namespace default postgres -o jsonpath=\"{.data.postgres-password}\" | base64 -d)","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.812Z","level":"verbose"}
+{"msg":"To connect to your database run the following command:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.813Z","level":"verbose"}
+{"msg":"kubectl run postgres-client --rm --tty -i --restart='Never' --namespace default --image docker.io/bitnami/postgresql:15.3.0-debian-11-r24 --env=\"PGPASSWORD=$POSTGRES_PASSWORD\" \\","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.813Z","level":"verbose"}
+{"msg":"--command -- psql --host postgres -U postgres -d postgres -p 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.813Z","level":"verbose"}
+{"msg":"> NOTE: If you access the container using bash, make sure that you execute \"/opt/bitnami/scripts/postgresql/entrypoint.sh /bin/bash\" in order to avoid the error \"psql: local user with ID 1001} does not exist\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.813Z","level":"verbose"}
+{"msg":"To connect to your database from outside the cluster execute the following commands:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.813Z","level":"verbose"}
+{"msg":"kubectl port-forward --namespace default svc/postgres 5432:5432 &","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.814Z","level":"verbose"}
+{"msg":"PGPASSWORD=\"$POSTGRES_PASSWORD\" psql --host 127.0.0.1 -U postgres -d postgres -p 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.814Z","level":"verbose"}
+{"msg":"WARNING: The configured password will be ignored on new installation in case when previous PostgreSQL release was deleted through the helm command. In that case, old PVC will have an old password, and setting it through helm won't take effect. Deleting persistent volumes (PVs) will solve the issue.","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.814Z","level":"verbose"}
+{"msg":"---","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.899Z","level":"verbose"}
+{"msg":"# Source: postgresql/templates/secrets.yaml","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.899Z","level":"verbose"}
+{"msg":"apiVersion: v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.899Z","level":"verbose"}
+{"msg":"kind: Secret","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.899Z","level":"verbose"}
+{"msg":"metadata:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.899Z","level":"verbose"}
+{"msg":"name: postgres","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"namespace: \"default\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"labels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"helm.sh/chart: postgresql-12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.900Z","level":"verbose"}
+{"msg":"app.kubernetes.io/managed-by: Helm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.901Z","level":"verbose"}
+{"msg":"type: Opaque","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.901Z","level":"verbose"}
+{"msg":"data:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.901Z","level":"verbose"}
+{"msg":"postgres-password: \"cG9zdGdyZXM=\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.901Z","level":"verbose"}
+{"msg":"# We don't auto-generate LDAP password when it's not provided as we do for other passwords","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.901Z","level":"verbose"}
+{"msg":"---","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"# Source: postgresql/templates/primary/svc-headless.yaml","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"apiVersion: v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"kind: Service","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"metadata:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"name: postgres-hl","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.902Z","level":"verbose"}
+{"msg":"namespace: \"default\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.903Z","level":"verbose"}
+{"msg":"labels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.903Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.903Z","level":"verbose"}
+{"msg":"helm.sh/chart: postgresql-12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"app.kubernetes.io/managed-by: Helm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"# Use this annotation in addition to the actual publishNotReadyAddresses","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"# field below because the annotation will stop being respected soon but the","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"# field is broken in some versions of Kubernetes:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.904Z","level":"verbose"}
+{"msg":"# https://github.com/kubernetes/kubernetes/issues/58662","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"service.alpha.kubernetes.io/tolerate-unready-endpoints: \"true\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"spec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"type: ClusterIP","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"clusterIP: None","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"# We want all pods in the StatefulSet to have their addresses published for","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.905Z","level":"verbose"}
+{"msg":"# the sake of the other Postgresql pods even before they're ready, since they","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"# have to be able to talk to each other in order to become ready.","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"publishNotReadyAddresses: true","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"ports:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"- name: tcp-postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"port: 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"targetPort: tcp-postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.906Z","level":"verbose"}
+{"msg":"selector:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"---","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"# Source: postgresql/templates/primary/svc.yaml","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.907Z","level":"verbose"}
+{"msg":"apiVersion: v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"kind: Service","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"metadata:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"name: postgres","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"namespace: \"default\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"labels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.908Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"helm.sh/chart: postgresql-12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"app.kubernetes.io/managed-by: Helm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"spec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"type: ClusterIP","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"sessionAffinity: None","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.909Z","level":"verbose"}
+{"msg":"ports:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"- name: tcp-postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"port: 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"targetPort: tcp-postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"nodePort: null","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"selector:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.910Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.911Z","level":"verbose"}
+{"msg":"---","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.911Z","level":"verbose"}
+{"msg":"# Source: postgresql/templates/primary/statefulset.yaml","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.911Z","level":"verbose"}
+{"msg":"apiVersion: apps/v1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"kind: StatefulSet","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"metadata:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"name: postgres","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"namespace: \"default\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"labels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.912Z","level":"verbose"}
+{"msg":"helm.sh/chart: postgresql-12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"app.kubernetes.io/managed-by: Helm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"spec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"replicas: 1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"serviceName: postgres-hl","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"updateStrategy:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.913Z","level":"verbose"}
+{"msg":"rollingUpdate: {}","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"type: RollingUpdate","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"selector:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"matchLabels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.914Z","level":"verbose"}
+{"msg":"template:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"metadata:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"name: postgres","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"labels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"helm.sh/chart: postgresql-12.6.6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"app.kubernetes.io/managed-by: Helm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.915Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"spec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"serviceAccountName: default","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"affinity:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"podAffinity:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"podAntiAffinity:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"preferredDuringSchedulingIgnoredDuringExecution:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.916Z","level":"verbose"}
+{"msg":"- podAffinityTerm:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"labelSelector:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"matchLabels:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"app.kubernetes.io/name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"app.kubernetes.io/instance: db","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"app.kubernetes.io/component: primary","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"topologyKey: kubernetes.io/hostname","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.917Z","level":"verbose"}
+{"msg":"weight: 1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"nodeAffinity:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"securityContext:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"fsGroup: 1001","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"hostNetwork: false","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"hostIPC: false","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"containers:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.918Z","level":"verbose"}
+{"msg":"- name: postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.919Z","level":"verbose"}
+{"msg":"image: docker.io/bitnami/postgresql:15.3.0-debian-11-r24","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.919Z","level":"verbose"}
+{"msg":"imagePullPolicy: \"IfNotPresent\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.919Z","level":"verbose"}
+{"msg":"securityContext:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"runAsUser: 1001","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"env:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"- name: BITNAMI_DEBUG","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"value: \"false\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_PORT_NUMBER","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.920Z","level":"verbose"}
+{"msg":"value: \"5432\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_VOLUME_DIR","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"value: \"/bitnami/postgresql\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"- name: PGDATA","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"value: \"/bitnami/postgresql/data\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"# Authentication","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"- name: POSTGRES_PASSWORD","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"value: postgres","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.921Z","level":"verbose"}
+{"msg":"- name: POSTGRES_DATABASE","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"value: \"postgres\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"# Replication","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"# Initdb","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"# Standby","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"# LDAP","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_ENABLE_LDAP","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"value: \"no\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.922Z","level":"verbose"}
+{"msg":"# TLS","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_ENABLE_TLS","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"value: \"no\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"# Audit","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_LOG_HOSTNAME","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"value: \"false\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_LOG_CONNECTIONS","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"value: \"false\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.923Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_LOG_DISCONNECTIONS","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"value: \"false\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_PGAUDIT_LOG_CATALOG","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"value: \"off\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"# Others","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_CLIENT_MIN_MESSAGES","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"value: \"error\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"- name: POSTGRESQL_SHARED_PRELOAD_LIBRARIES","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.924Z","level":"verbose"}
+{"msg":"value: \"pgaudit\"","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"ports:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"- name: tcp-postgresql","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"containerPort: 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"livenessProbe:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"failureThreshold: 6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"initialDelaySeconds: 30","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"periodSeconds: 10","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.925Z","level":"verbose"}
+{"msg":"successThreshold: 1","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"timeoutSeconds: 5","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"exec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"command:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"- /bin/sh","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"- -c","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"- exec pg_isready -U \"postgres\" -d \"dbname=postgres\" -h 127.0.0.1 -p 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"readinessProbe:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.926Z","level":"verbose"}
+{"msg":"failureThreshold: 6","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.927Z","level":"verbose"}
+{"msg":"initialDelaySeconds: 5","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.927Z","level":"verbose"}
+{"msg":"periodSeconds: 10","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.927Z","level":"verbose"}
+{"msg":"successThreshold: 3","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.927Z","level":"verbose"}
+{"msg":"timeoutSeconds: 5","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"exec:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"command:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"- /bin/sh","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"- -c","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"- -e","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.928Z","level":"verbose"}
+{"msg":"- |","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"exec pg_isready -U \"postgres\" -d \"dbname=postgres\" -h 127.0.0.1 -p 5432","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"[ -f /opt/bitnami/postgresql/tmp/.initialized ] || [ -f /bitnami/postgresql/.initialized ]","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"resources:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"limits: {}","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"requests:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"cpu: 250m","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.929Z","level":"verbose"}
+{"msg":"memory: 256Mi","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"volumeMounts:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"- name: dshm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"mountPath: /dev/shm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"volumes:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"- name: dshm","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"emptyDir:","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.930Z","level":"verbose"}
+{"msg":"medium: Memory","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.931Z","level":"verbose"}
+{"msg":"- name: data","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.931Z","level":"verbose"}
+{"msg":"emptyDir: {}","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:22.931Z","level":"verbose"}
+{"msg":"Done (took 62 sec)","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:23.077Z","level":"info"}
+{"msg":"Deploy type=helm name=db is ready.","section":"deploy.db                 →","timestamp":"2024-12-21T10:45:23.078Z","level":"verbose"}
+{"msg":"Done!","section":"","timestamp":"2024-12-21T10:45:23.130Z","level":"info"}
+{"msg":"Done flushing all events and log entries.","section":"","timestamp":"2024-12-21T10:45:23.731Z","level":"debug"}
+{"msg":"View command results at: \n\nhttps://app.garden.io/go/command/TcwOVjCoDR","section":"","timestamp":"2024-12-21T10:45:23.782Z","level":"info"}
+{"msg":"Watcher: Initializing","section":"","timestamp":"2024-12-21T10:45:23.782Z","level":"debug"}
+{"msg":"Watcher: Starting FSWatcher","section":"","timestamp":"2024-12-21T10:45:23.782Z","level":"debug"}

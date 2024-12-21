@@ -1,0 +1,28 @@
+apiVersion: garden.io/v1
+kind: Project
+name: vote-demo-quickstart
+defaultEnvironment: remote
+dotIgnoreFile: .gitignore
+
+variables:
+  postgresUsername: postgres
+  postgresDatabase: postgres
+  postgresPassword: postgres
+
+  userNamespace: vote-demo-quickstart-${kebabCase(local.username)}
+
+environments:
+  - name: remote
+    defaultNamespace: ${var.userNamespace}
+    variables:
+      hostname: https://192.168.1.201:6443
+
+providers:
+  - name: kubernetes
+    environments: [remote]
+    context: "kubernetes-admin@kubernetes"
+    ingressClass: "nginx"
+    buildMode: cluster-buildkit
+    namespace: default
+    defaultHostname: scadrial.lan
+

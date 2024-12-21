@@ -1,0 +1,36 @@
+{"msg":"Registering session with the Garden dashboard for 255825ae-35a0-41b3-9e8b-e2300f2acd58 in remote/vote-demo-quickstart-hoid.","section":"","timestamp":"2024-12-21T10:41:47.784Z","level":"debug"}
+{"msg":"Successfully registered session with the Garden dashboard.","section":"","timestamp":"2024-12-21T10:41:47.876Z","level":"debug"}
+{"msg":"View command results at: https://app.garden.io/go/command/8vt0rL9agq","section":"garden-dashboard          →","timestamp":"2024-12-21T10:41:47.876Z","level":"info"}
+{"msg":"Resolving providers...","section":"providers                 →","timestamp":"2024-12-21T10:41:47.880Z","level":"info"}
+{"msg":"Configuring provider...","section":"exec                      →","timestamp":"2024-12-21T10:41:48.042Z","level":"info"}
+{"msg":"Configuring provider...","section":"templated                 →","timestamp":"2024-12-21T10:41:48.044Z","level":"debug"}
+{"msg":"Configuring provider...","section":"container                 →","timestamp":"2024-12-21T10:41:48.044Z","level":"debug"}
+{"msg":"Provider configured","section":"exec                      →","timestamp":"2024-12-21T10:41:48.050Z","level":"info"}
+{"msg":"Provider configured","section":"templated                 →","timestamp":"2024-12-21T10:41:48.050Z","level":"debug"}
+{"msg":"Provider configured","section":"container                 →","timestamp":"2024-12-21T10:41:48.050Z","level":"debug"}
+{"msg":"Provider status cached","section":"templated                 →","timestamp":"2024-12-21T10:41:48.052Z","level":"debug"}
+{"msg":"resolve provider templated is ready.","section":"providers                 →","timestamp":"2024-12-21T10:41:48.053Z","level":"verbose"}
+{"msg":"Provider status cached","section":"container                 →","timestamp":"2024-12-21T10:41:48.054Z","level":"debug"}
+{"msg":"resolve provider container is ready.","section":"providers                 →","timestamp":"2024-12-21T10:41:48.054Z","level":"verbose"}
+{"msg":"Configuring provider...","section":"kubernetes                →","timestamp":"2024-12-21T10:41:48.054Z","level":"info"}
+{"msg":"You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.\n\nFor guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s","section":"kubernetes                →","timestamp":"2024-12-21T10:41:48.056Z","level":"warn"}
+{"msg":"Provider configured","section":"kubernetes                →","timestamp":"2024-12-21T10:41:48.057Z","level":"info"}
+{"msg":"Provider status cached","section":"exec                      →","timestamp":"2024-12-21T10:41:48.058Z","level":"info"}
+{"msg":"resolve provider exec is ready.","section":"providers                 →","timestamp":"2024-12-21T10:41:48.058Z","level":"verbose"}
+{"msg":"Kubernetes: Getting API resource info for group networking.k8s.io/v1","section":"kubernetes                →","timestamp":"2024-12-21T10:41:48.159Z","level":"debug"}
+{"msg":"Provider ready","section":"kubernetes                →","timestamp":"2024-12-21T10:41:48.243Z","level":"info"}
+{"msg":"resolve provider kubernetes is ready.","section":"providers                 →","timestamp":"2024-12-21T10:41:48.245Z","level":"verbose"}
+{"msg":"Finished resolving providers (took 0.4 sec)","section":"providers                 →","timestamp":"2024-12-21T10:41:48.246Z","level":"info"}
+{"msg":"Some provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.","section":"providers                 →","timestamp":"2024-12-21T10:41:48.247Z","level":"info"}
+{"msg":"Resolving actions and modules...","section":"graph                     →","timestamp":"2024-12-21T10:41:48.247Z","level":"info"}
+{"msg":"Building graph from 0 action configs and 0 group configs","section":"graph                     →","timestamp":"2024-12-21T10:41:48.251Z","level":"debug"}
+{"msg":"Retained 0 configs","section":"graph                     →","timestamp":"2024-12-21T10:41:48.252Z","level":"debug"}
+{"msg":"Got 0 action configs without action filter","section":"graph                     →","timestamp":"2024-12-21T10:41:48.252Z","level":"debug"}
+{"msg":"Finding minimal roots for 0 paths","section":"graph                     →","timestamp":"2024-12-21T10:41:48.252Z","level":"debug"}
+{"msg":"Finished resolving graph (took 0 sec)","section":"graph                     →","timestamp":"2024-12-21T10:41:48.254Z","level":"info"}
+{"msg":"Finished initializing Garden (took 1.1 sec)","section":"garden                    →","timestamp":"2024-12-21T10:41:48.254Z","level":"info"}
+{"msg":"Nothing to deploy. Aborting.","section":"garden                    →","timestamp":"2024-12-21T10:41:48.255Z","level":"error"}
+{"msg":"Done flushing all events and log entries.","section":"","timestamp":"2024-12-21T10:41:48.478Z","level":"debug"}
+{"msg":"View command results at: \n\nhttps://app.garden.io/go/command/8vt0rL9agq","section":"","timestamp":"2024-12-21T10:41:48.527Z","level":"info"}
+{"msg":"Watcher: Initializing","section":"","timestamp":"2024-12-21T10:41:48.528Z","level":"debug"}
+{"msg":"Watcher: Starting FSWatcher","section":"","timestamp":"2024-12-21T10:41:48.528Z","level":"debug"}

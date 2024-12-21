@@ -1,0 +1,20 @@
+
+[2024-12-21T10:38:21.684Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:38:38.912Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:39:25.832Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:40:13.291Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:40:42.100Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:41:22.724Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:41:48.256Z] Nothing to deploy. Aborting.

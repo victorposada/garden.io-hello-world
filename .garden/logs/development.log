@@ -1,0 +1,220 @@
+
+[2024-12-21T10:38:20.427Z] View command results at: https://app.garden.io/go/command/SG1kraPfWu
+
+[2024-12-21T10:38:20.434Z] Resolving providers...
+
+[2024-12-21T10:38:20.616Z] Configuring provider...
+
+[2024-12-21T10:38:20.622Z] Provider configured
+
+[2024-12-21T10:38:20.631Z] Provider ready
+
+[2024-12-21T10:38:20.635Z] Configuring provider...
+
+[2024-12-21T10:38:21.684Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:38:21.685Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:38:37.626Z] View command results at: https://app.garden.io/go/command/7AClTf0Rvh
+
+[2024-12-21T10:38:37.633Z] Resolving providers...
+
+[2024-12-21T10:38:37.815Z] Configuring provider...
+
+[2024-12-21T10:38:37.822Z] Provider configured
+
+[2024-12-21T10:38:37.833Z] Configuring provider...
+
+[2024-12-21T10:38:37.835Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:38:37.836Z] Provider configured
+
+[2024-12-21T10:38:37.837Z] Provider status cached
+
+[2024-12-21T10:38:38.912Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:38:38.912Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:39:24.550Z] View command results at: https://app.garden.io/go/command/5UkScC8Y0m
+
+[2024-12-21T10:39:24.557Z] Resolving providers...
+
+[2024-12-21T10:39:24.746Z] Configuring provider...
+
+[2024-12-21T10:39:24.753Z] Provider configured
+
+[2024-12-21T10:39:24.764Z] Provider status cached
+
+[2024-12-21T10:39:24.766Z] Configuring provider...
+
+[2024-12-21T10:39:24.768Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:39:24.769Z] Provider configured
+
+[2024-12-21T10:39:25.832Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:39:25.832Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:40:12.034Z] View command results at: https://app.garden.io/go/command/KJ1DjKiyta
+
+[2024-12-21T10:40:12.041Z] Resolving providers...
+
+[2024-12-21T10:40:12.238Z] Configuring provider...
+
+[2024-12-21T10:40:12.244Z] Provider configured
+
+[2024-12-21T10:40:12.254Z] Provider status cached
+
+[2024-12-21T10:40:13.291Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:40:13.291Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:40:40.817Z] View command results at: https://app.garden.io/go/command/8vx7aoF89N
+
+[2024-12-21T10:40:40.823Z] Resolving providers...
+
+[2024-12-21T10:40:41.009Z] Configuring provider...
+
+[2024-12-21T10:40:41.016Z] Provider configured
+
+[2024-12-21T10:40:41.028Z] Configuring provider...
+
+[2024-12-21T10:40:41.029Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:40:41.030Z] Provider configured
+
+[2024-12-21T10:40:41.031Z] Provider status cached
+
+[2024-12-21T10:40:42.100Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:40:42.100Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:41:21.442Z] View command results at: https://app.garden.io/go/command/OxGgaZs4Er
+
+[2024-12-21T10:41:21.448Z] Resolving providers...
+
+[2024-12-21T10:41:21.638Z] Configuring provider...
+
+[2024-12-21T10:41:21.644Z] Provider configured
+
+[2024-12-21T10:41:21.655Z] Configuring provider...
+
+[2024-12-21T10:41:21.657Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:41:21.657Z] Provider configured
+
+[2024-12-21T10:41:21.658Z] Provider status cached
+
+[2024-12-21T10:41:22.724Z] Failed resolving one or more providers:
+- kubernetes
+
+[2024-12-21T10:41:22.724Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-21T10:41:47.877Z] View command results at: https://app.garden.io/go/command/8vt0rL9agq
+
+[2024-12-21T10:41:47.880Z] Resolving providers...
+
+[2024-12-21T10:41:48.043Z] Configuring provider...
+
+[2024-12-21T10:41:48.050Z] Provider configured
+
+[2024-12-21T10:41:48.055Z] Configuring provider...
+
+[2024-12-21T10:41:48.056Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:41:48.057Z] Provider configured
+
+[2024-12-21T10:41:48.058Z] Provider status cached
+
+[2024-12-21T10:41:48.243Z] Provider ready
+
+[2024-12-21T10:41:48.247Z] Finished resolving providers (took 0.4 sec)
+
+[2024-12-21T10:41:48.247Z] Some provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-21T10:41:48.248Z] Resolving actions and modules...
+
+[2024-12-21T10:41:48.254Z] Finished resolving graph (took 0 sec)
+
+[2024-12-21T10:41:48.254Z] Finished initializing Garden (took 1.1 sec)
+
+
+[2024-12-21T10:41:48.257Z] Nothing to deploy. Aborting.
+
+[2024-12-21T10:41:48.528Z] 
+View command results at: 
+
+https://app.garden.io/go/command/8vt0rL9agq 
+
+
+[2024-12-21T10:44:20.535Z] View command results at: https://app.garden.io/go/command/TcwOVjCoDR
+
+[2024-12-21T10:44:20.538Z] Resolving providers...
+
+[2024-12-21T10:44:20.711Z] Configuring provider...
+
+[2024-12-21T10:44:20.719Z] Provider configured
+
+[2024-12-21T10:44:20.729Z] Provider ready
+
+[2024-12-21T10:44:20.733Z] Configuring provider...
+
+[2024-12-21T10:44:20.735Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-21T10:44:20.736Z] Provider configured
+
+[2024-12-21T10:44:20.902Z] Provider ready
+
+[2024-12-21T10:44:20.905Z] Finished resolving providers (took 0.4 sec)
+
+[2024-12-21T10:44:20.906Z] Resolving actions and modules...
+
+[2024-12-21T10:44:20.965Z] Finished resolving graph (took 0.1 sec)
+
+[2024-12-21T10:44:20.965Z] Finished initializing Garden (took 1.3 sec)
+
+
+[2024-12-21T10:44:20.975Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-21T10:44:21.075Z] Status is missing, db will be deployed
+
+[2024-12-21T10:44:21.077Z] Deploying db (type helm) at version v-b4bbcc161f...
+
+[2024-12-21T10:44:25.703Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-12-21T10:44:33.661Z] [kubernetes] StatefulSet/postgres: Pulling image "docker.io/bitnami/postgresql:15.3.0-debian-11-r24"
+
+[2024-12-21T10:44:57.343Z] [kubernetes] StatefulSet/postgres: Started container postgresql
+
+[2024-12-21T10:45:23.077Z] Done (took 62 sec)
+
+[2024-12-21T10:45:23.130Z] Done! 
+
+[2024-12-21T10:45:23.782Z] 
+View command results at: 
+
+https://app.garden.io/go/command/TcwOVjCoDR 
+
