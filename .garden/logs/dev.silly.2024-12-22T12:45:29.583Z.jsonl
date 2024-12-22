@@ -1,0 +1,19 @@
+{"msg":"Initializing Garden Cloud API client.","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:29.624Z","level":"debug"}
+{"msg":"Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify","section":"","timestamp":"2024-12-22T12:45:29.628Z","level":"debug"}
+{"msg":"Checked client auth token with the Garden dashboard - valid: false","section":"","timestamp":"2024-12-22T12:45:29.824Z","level":"debug"}
+{"msg":"Authorizing...","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:29.824Z","level":"debug"}
+{"msg":"Current auth token is invalid, refreshing","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:29.825Z","level":"debug"}
+{"msg":"Failed to refresh the token.","section":"","timestamp":"2024-12-22T12:45:29.932Z","level":"debug"}
+{"msg":"Unable to load Garden project found at /home/hoid/Documents/garden.io-hello-world: Error: An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401","section":"","timestamp":"2024-12-22T12:45:29.932Z","level":"warn"}
+{"msg":"Garden server has successfully started at port 9777","section":"","timestamp":"2024-12-22T12:45:29.942Z","level":"info"}
+{"msg":"Initializing Garden Cloud API client.","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:29.950Z","level":"debug"}
+{"msg":"Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify","section":"","timestamp":"2024-12-22T12:45:29.951Z","level":"debug"}
+{"msg":"Checked client auth token with the Garden dashboard - valid: false","section":"","timestamp":"2024-12-22T12:45:30.002Z","level":"debug"}
+{"msg":"Authorizing...","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:30.002Z","level":"debug"}
+{"msg":"Current auth token is invalid, refreshing","section":"garden-dashboard          →","timestamp":"2024-12-22T12:45:30.003Z","level":"debug"}
+{"msg":"Failed to refresh the token.","section":"","timestamp":"2024-12-22T12:45:30.108Z","level":"debug"}
+{"msg":"Unable to authenticate against the Garden dashboard with the current session token.\nThe dashboard will not be available until you authenticate again. Please try logging out with\ngarden logout and back in again with garden login.","section":"","timestamp":"2024-12-22T12:45:30.108Z","level":"warn"}
+{"msg":"Syncs started during this session may still be active when this command terminates. You can run garden sync stop '*' to stop all code syncs. Hint: To stop code syncing when exiting garden dev, use Ctrl-D or the exit command.\n→ Run garden util hide-warning dev-syncs-active to disable this message.","section":"","timestamp":"2024-12-22T12:45:37.560Z","level":"warn"}
+{"msg":"Done flushing all events and log entries.","section":"","timestamp":"2024-12-22T12:45:37.565Z","level":"debug"}
+{"msg":"Watcher: Initializing","section":"","timestamp":"2024-12-22T12:45:37.616Z","level":"debug"}
+{"msg":"Watcher: Starting FSWatcher","section":"","timestamp":"2024-12-22T12:45:37.617Z","level":"debug"}

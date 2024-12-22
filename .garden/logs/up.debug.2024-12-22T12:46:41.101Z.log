@@ -1,0 +1,70 @@
+
+[2024-12-22T12:46:41.108Z] 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 🌳  garden dev 🌳  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Good afternoon! Welcome to the Garden interactive development console.
+
+Here you can build, deploy, test and run anything in your project, start code syncing, stream live logs and more.
+
+Use the command line below to enter Garden commands. Type help to get a full list of commands.
+Use up/down arrow keys to scroll through your command history.
+    
+
+[2024-12-22T12:46:41.132Z] [debug] Initializing Garden Cloud API client.
+
+[2024-12-22T12:46:41.133Z] [debug] Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify
+
+[2024-12-22T12:46:41.182Z] [debug] Checked client auth token with the Garden dashboard - valid: false
+
+[2024-12-22T12:46:41.182Z] [debug] Authorizing...
+
+[2024-12-22T12:46:41.182Z] [debug] Current auth token is invalid, refreshing
+
+[2024-12-22T12:46:41.280Z] [debug] Failed to refresh the token.
+
+[2024-12-22T12:46:41.281Z] Unable to load Garden project found at /home/hoid/Documents/garden.io-hello-world: Error: An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:46:41.285Z] Garden server has successfully started at port 9777
+
+
+[2024-12-22T12:46:41.291Z] [debug] Initializing Garden Cloud API client.
+
+[2024-12-22T12:46:41.292Z] [debug] Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify
+
+[2024-12-22T12:46:41.343Z] [debug] Checked client auth token with the Garden dashboard - valid: false
+
+[2024-12-22T12:46:41.343Z] [debug] Authorizing...
+
+[2024-12-22T12:46:41.343Z] [debug] Current auth token is invalid, refreshing
+
+[2024-12-22T12:46:41.438Z] [debug] Failed to refresh the token.
+
+[2024-12-22T12:46:41.438Z] Unable to authenticate against the Garden dashboard with the current session token.
+The dashboard will not be available until you authenticate again. Please try logging out with
+garden logout and back in again with garden login.
+
+[2024-12-22T12:46:42.253Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy --logs command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-12-22T12:46:42.259Z] [debug] Initializing Garden Cloud API client.
+
+[2024-12-22T12:46:42.259Z] [debug] Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify
+
+[2024-12-22T12:46:42.307Z] [debug] Checked client auth token with the Garden dashboard - valid: false
+
+[2024-12-22T12:46:42.307Z] [debug] Authorizing...
+
+[2024-12-22T12:46:42.307Z] [debug] Current auth token is invalid, refreshing
+
+[2024-12-22T12:46:42.359Z] [debug] Failed to refresh the token.
+
+[2024-12-22T12:46:42.362Z] An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:46:50.704Z] Syncs started during this session may still be active when this command terminates. You can run garden sync stop '*' to stop all code syncs. Hint: To stop code syncing when exiting garden dev, use Ctrl-D or the exit command.
+→ Run garden util hide-warning dev-syncs-active to disable this message.
+
+[2024-12-22T12:46:50.708Z] [debug] Done flushing all events and log entries.
+
+[2024-12-22T12:46:50.759Z] [debug] Watcher: Initializing
+
+[2024-12-22T12:46:50.759Z] [debug] Watcher: Starting FSWatcher

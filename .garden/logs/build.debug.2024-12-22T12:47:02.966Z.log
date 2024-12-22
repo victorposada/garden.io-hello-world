@@ -1,0 +1,87 @@
+
+[2024-12-22T12:47:02.973Z] Resolving providers...
+
+[2024-12-22T12:47:03.134Z] Configuring provider...
+
+[2024-12-22T12:47:03.135Z] [debug] Configuring provider...
+
+[2024-12-22T12:47:03.136Z] [debug] Configuring provider...
+
+[2024-12-22T12:47:03.141Z] Provider configured
+
+[2024-12-22T12:47:03.142Z] [debug] Provider configured
+
+[2024-12-22T12:47:03.142Z] [debug] Provider configured
+
+[2024-12-22T12:47:03.144Z] Provider status cached
+
+[2024-12-22T12:47:03.145Z] [verbose] resolve provider exec is ready.
+
+[2024-12-22T12:47:03.146Z] [debug] Provider status cached
+
+[2024-12-22T12:47:03.146Z] [verbose] resolve provider container is ready.
+
+[2024-12-22T12:47:03.146Z] Configuring provider...
+
+[2024-12-22T12:47:03.148Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:47:03.149Z] Provider configured
+
+[2024-12-22T12:47:03.149Z] [debug] Provider status cached
+
+[2024-12-22T12:47:03.149Z] [verbose] resolve provider templated is ready.
+
+[2024-12-22T12:47:03.150Z] Provider status cached
+
+[2024-12-22T12:47:03.151Z] [verbose] resolve provider kubernetes is ready.
+
+[2024-12-22T12:47:03.151Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:47:03.151Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:47:03.152Z] Resolving actions and modules...
+
+[2024-12-22T12:47:03.154Z] [debug] Building graph from 4 action configs and 0 group configs
+
+[2024-12-22T12:47:03.154Z] [debug] Retained 4 configs
+
+[2024-12-22T12:47:03.169Z] [debug] Got 4 action configs without action filter
+
+[2024-12-22T12:47:03.169Z] [debug] Finding minimal roots for 2 paths
+
+[2024-12-22T12:47:03.181Z] [verbose] Scanning Deploy action db root at /home/hoid/Documents/garden.io-hello-world
+  → Includes: (none)
+  → Excludes: (none)
+
+[2024-12-22T12:47:03.194Z] [verbose] Found 3 files in Deploy action db root /home/hoid/Documents/garden.io-hello-world (took 0.01 sec)
+
+[2024-12-22T12:47:03.195Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:47:03.195Z] [debug] Include globs: **/*
+
+[2024-12-22T12:47:03.195Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:47:03.196Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres after glob matching
+
+[2024-12-22T12:47:03.196Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:47:03.196Z] [debug] Include globs: **/*
+
+[2024-12-22T12:47:03.196Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:47:03.196Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack after glob matching
+
+[2024-12-22T12:47:03.198Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:47:03.198Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:47:03.249Z] Done! 
+
+[2024-12-22T12:47:03.250Z] [debug] Done flushing all events and log entries.
+
+[2024-12-22T12:47:03.301Z] [debug] Watcher: Initializing
+
+[2024-12-22T12:47:03.301Z] [debug] Watcher: Starting FSWatcher

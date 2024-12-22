@@ -1,0 +1,112 @@
+
+[2024-12-22T12:47:22.589Z] Resolving providers...
+
+[2024-12-22T12:47:22.749Z] Configuring provider...
+
+[2024-12-22T12:47:22.750Z] [debug] Configuring provider...
+
+[2024-12-22T12:47:22.751Z] [debug] Configuring provider...
+
+[2024-12-22T12:47:22.756Z] Provider configured
+
+[2024-12-22T12:47:22.756Z] [debug] Provider configured
+
+[2024-12-22T12:47:22.757Z] [debug] Provider configured
+
+[2024-12-22T12:47:22.759Z] Provider status cached
+
+[2024-12-22T12:47:22.759Z] [verbose] resolve provider exec is ready.
+
+[2024-12-22T12:47:22.760Z] [debug] Provider status cached
+
+[2024-12-22T12:47:22.760Z] [verbose] resolve provider container is ready.
+
+[2024-12-22T12:47:22.761Z] Configuring provider...
+
+[2024-12-22T12:47:22.762Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:47:22.763Z] Provider configured
+
+[2024-12-22T12:47:22.764Z] [debug] Provider status cached
+
+[2024-12-22T12:47:22.764Z] [verbose] resolve provider templated is ready.
+
+[2024-12-22T12:47:22.765Z] Provider status cached
+
+[2024-12-22T12:47:22.765Z] [verbose] resolve provider kubernetes is ready.
+
+[2024-12-22T12:47:22.766Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:47:22.766Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:47:22.766Z] Resolving actions and modules...
+
+[2024-12-22T12:47:22.768Z] [debug] Building graph from 4 action configs and 0 group configs
+
+[2024-12-22T12:47:22.768Z] [debug] Retained 4 configs
+
+[2024-12-22T12:47:22.783Z] [debug] Got 4 action configs without action filter
+
+[2024-12-22T12:47:22.784Z] [debug] Finding minimal roots for 2 paths
+
+[2024-12-22T12:47:22.794Z] [verbose] Scanning Deploy action db root at /home/hoid/Documents/garden.io-hello-world
+  → Includes: (none)
+  → Excludes: (none)
+
+[2024-12-22T12:47:22.808Z] [verbose] Found 3 files in Deploy action db root /home/hoid/Documents/garden.io-hello-world (took 0.01 sec)
+
+[2024-12-22T12:47:22.809Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:47:22.809Z] [debug] Include globs: **/*
+
+[2024-12-22T12:47:22.809Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:47:22.809Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres after glob matching
+
+[2024-12-22T12:47:22.810Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:47:22.810Z] [debug] Include globs: **/*
+
+[2024-12-22T12:47:22.810Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:47:22.810Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack after glob matching
+
+[2024-12-22T12:47:22.811Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:47:22.812Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:47:22.824Z] [debug] resolve Deploy type=helm name=db is ready.
+
+[2024-12-22T12:47:22.824Z] [debug] resolve Deploy type=helm name=kube-prometheus-stack is ready.
+
+[2024-12-22T12:47:22.824Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-22T12:47:22.825Z] Getting status for Deploy kube-prometheus-stack (type helm) at version v-5b8253ae70...
+
+[2024-12-22T12:47:23.125Z] Status is missing, kube-prometheus-stack will be deployed
+
+[2024-12-22T12:47:23.127Z] Deploying kube-prometheus-stack (type helm) at version v-5b8253ae70...
+
+[2024-12-22T12:47:23.301Z] [debug] Kubernetes: Getting API resource info for group v1
+
+[2024-12-22T12:47:23.302Z] [debug] Kubernetes: Getting API resource info for group apps/v1
+
+[2024-12-22T12:47:23.402Z] Already deployed
+
+[2024-12-22T12:47:23.402Z] [verbose] Deploy type=helm name=db status is ready.
+
+[2024-12-22T12:47:24.072Z] Failed (took 0.9 sec)
+
+[2024-12-22T12:47:24.079Z] [debug] Done flushing all events and log entries.
+
+[2024-12-22T12:47:24.129Z] [debug] Watcher: Initializing
+
+[2024-12-22T12:47:24.129Z] [debug] Watcher: Starting FSWatcher
+
+[2024-12-22T12:47:24.380Z] 1 requested deploy action(s) failed!
+
+[2024-12-22T12:47:24.381Z] 
+See .garden/error.log for detailed error message

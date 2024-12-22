@@ -1,0 +1,42 @@
+
+[2024-12-22T12:45:29.626Z] [debug] Initializing Garden Cloud API client.
+
+[2024-12-22T12:45:29.628Z] [debug] Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify
+
+[2024-12-22T12:45:29.824Z] [debug] Checked client auth token with the Garden dashboard - valid: false
+
+[2024-12-22T12:45:29.825Z] [debug] Authorizing...
+
+[2024-12-22T12:45:29.825Z] [debug] Current auth token is invalid, refreshing
+
+[2024-12-22T12:45:29.932Z] [debug] Failed to refresh the token.
+
+[2024-12-22T12:45:29.933Z] Unable to load Garden project found at /home/hoid/Documents/garden.io-hello-world: Error: An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:45:29.942Z] Garden server has successfully started at port 9777
+
+
+[2024-12-22T12:45:29.950Z] [debug] Initializing Garden Cloud API client.
+
+[2024-12-22T12:45:29.951Z] [debug] Checking client auth token with the Garden dashboard: https://app.garden.io/token/verify
+
+[2024-12-22T12:45:30.002Z] [debug] Checked client auth token with the Garden dashboard - valid: false
+
+[2024-12-22T12:45:30.002Z] [debug] Authorizing...
+
+[2024-12-22T12:45:30.003Z] [debug] Current auth token is invalid, refreshing
+
+[2024-12-22T12:45:30.108Z] [debug] Failed to refresh the token.
+
+[2024-12-22T12:45:30.108Z] Unable to authenticate against the Garden dashboard with the current session token.
+The dashboard will not be available until you authenticate again. Please try logging out with
+garden logout and back in again with garden login.
+
+[2024-12-22T12:45:37.560Z] Syncs started during this session may still be active when this command terminates. You can run garden sync stop '*' to stop all code syncs. Hint: To stop code syncing when exiting garden dev, use Ctrl-D or the exit command.
+→ Run garden util hide-warning dev-syncs-active to disable this message.
+
+[2024-12-22T12:45:37.565Z] [debug] Done flushing all events and log entries.
+
+[2024-12-22T12:45:37.616Z] [debug] Watcher: Initializing
+
+[2024-12-22T12:45:37.617Z] [debug] Watcher: Starting FSWatcher

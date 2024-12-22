@@ -1,0 +1,3191 @@
+
+[2024-12-22T12:49:29.021Z] Resolving providers...
+
+[2024-12-22T12:49:29.183Z] Configuring provider...
+
+[2024-12-22T12:49:29.185Z] [debug] Configuring provider...
+
+[2024-12-22T12:49:29.185Z] [debug] Configuring provider...
+
+[2024-12-22T12:49:29.191Z] Provider configured
+
+[2024-12-22T12:49:29.191Z] [debug] Provider configured
+
+[2024-12-22T12:49:29.191Z] [debug] Provider configured
+
+[2024-12-22T12:49:29.195Z] Provider status cached
+
+[2024-12-22T12:49:29.196Z] [verbose] resolve provider exec is ready.
+
+[2024-12-22T12:49:29.197Z] [debug] Provider status cached
+
+[2024-12-22T12:49:29.197Z] [verbose] resolve provider container is ready.
+
+[2024-12-22T12:49:29.198Z] Configuring provider...
+
+[2024-12-22T12:49:29.199Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:49:29.200Z] Provider configured
+
+[2024-12-22T12:49:29.200Z] [debug] Provider status cached
+
+[2024-12-22T12:49:29.201Z] [verbose] resolve provider templated is ready.
+
+[2024-12-22T12:49:29.202Z] Provider status cached
+
+[2024-12-22T12:49:29.202Z] [verbose] resolve provider kubernetes is ready.
+
+[2024-12-22T12:49:29.202Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:49:29.203Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:49:29.203Z] Resolving actions and modules...
+
+[2024-12-22T12:49:29.205Z] [debug] Building graph from 4 action configs and 0 group configs
+
+[2024-12-22T12:49:29.205Z] [debug] Retained 4 configs
+
+[2024-12-22T12:49:29.220Z] [debug] Got 4 action configs without action filter
+
+[2024-12-22T12:49:29.220Z] [debug] Finding minimal roots for 2 paths
+
+[2024-12-22T12:49:29.229Z] [verbose] Scanning Deploy action db root at /home/hoid/Documents/garden.io-hello-world
+  → Includes: (none)
+  → Excludes: (none)
+
+[2024-12-22T12:49:29.243Z] [verbose] Found 3 files in Deploy action db root /home/hoid/Documents/garden.io-hello-world (took 0.01 sec)
+
+[2024-12-22T12:49:29.243Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:49:29.244Z] [debug] Include globs: **/*
+
+[2024-12-22T12:49:29.244Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:49:29.244Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres after glob matching
+
+[2024-12-22T12:49:29.244Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack, filtering by 1 include and 1 exclude globs
+
+[2024-12-22T12:49:29.244Z] [debug] Include globs: **/*
+
+[2024-12-22T12:49:29.244Z] [debug] Exclude globs: **/.garden/**/*
+
+[2024-12-22T12:49:29.245Z] [debug] Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack after glob matching
+
+[2024-12-22T12:49:29.246Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:49:29.246Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:49:29.258Z] [debug] resolve Deploy type=helm name=db is ready.
+
+[2024-12-22T12:49:29.258Z] [debug] resolve Deploy type=helm name=kube-prometheus-stack is ready.
+
+[2024-12-22T12:49:29.259Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-22T12:49:29.259Z] Getting status for Deploy kube-prometheus-stack (type helm) at version v-f672659235...
+
+[2024-12-22T12:49:29.405Z] Status is missing, kube-prometheus-stack will be deployed
+
+[2024-12-22T12:49:29.406Z] Deploying kube-prometheus-stack (type helm) at version v-f672659235...
+
+[2024-12-22T12:49:29.566Z] [debug] Kubernetes: Getting API resource info for group v1
+
+[2024-12-22T12:49:29.567Z] [debug] Kubernetes: Getting API resource info for group apps/v1
+
+[2024-12-22T12:49:29.660Z] Already deployed
+
+[2024-12-22T12:49:29.661Z] [verbose] Deploy type=helm name=db status is ready.
+
+[2024-12-22T12:49:36.513Z] [debug] Installing Helm release kube-prometheus-stack
+
+[2024-12-22T12:49:36.514Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-12-22T12:49:36.514Z] [verbose] [kubernetes] Waiting for resources to be ready...
+
+[2024-12-22T12:49:38.516Z] [debug] Kubernetes: Getting API resource info for group rbac.authorization.k8s.io/v1
+
+[2024-12-22T12:49:38.517Z] [debug] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2024-12-22T12:49:38.517Z] [debug] Kubernetes: Getting API resource info for group monitoring.coreos.com/v1
+
+[2024-12-22T12:49:38.518Z] [debug] Kubernetes: Getting API resource info for group admissionregistration.k8s.io/v1
+
+[2024-12-22T12:49:39.868Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.868Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.868Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.869Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.869Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.869Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.870Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.870Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.870Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.871Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.871Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.871Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.872Z] [debug] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.872Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.872Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.873Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.873Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:39.874Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:39.874Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.874Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.874Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:39.874Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:39.875Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:39.875Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:39.875Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:39.875Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:39.875Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:39.876Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:39.876Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:39.876Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:39.876Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:39.876Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:39.877Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:39.877Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:39.877Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:39.877Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:39.877Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:39.878Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:39.878Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:39.878Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:39.878Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:39.878Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:39.879Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:39.879Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:39.879Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:39.879Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:39.879Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:39.880Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:39.880Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:39.880Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:39.880Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:39.881Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:39.881Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:39.881Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:39.881Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:39.881Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:39.882Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:39.882Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:39.882Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:39.882Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:39.882Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:39.883Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:39.883Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:39.883Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:39.883Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:39.883Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:39.884Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:39.884Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:39.884Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:39.884Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:39.884Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.885Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.885Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:39.885Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:39.885Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:39.885Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:39.886Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:39.886Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:39.886Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:39.887Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:39.887Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.887Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.887Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.887Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.888Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.888Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.888Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:39.888Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:39.888Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.888Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.888Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.889Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.889Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.889Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.889Z] [debug] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.889Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.889Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.890Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.890Z] [debug] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.890Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.890Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.890Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.890Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.890Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.890Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.891Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.891Z] [debug] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:39.891Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:39.891Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:39.891Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:39.891Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:39.891Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:39.891Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.891Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.892Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:39.892Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:39.892Z] [debug] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.892Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.892Z] [debug] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.892Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.892Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.892Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.893Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.893Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.893Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.893Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.893Z] [debug] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.893Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.893Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.893Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.893Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.894Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.894Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.894Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.894Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.894Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.894Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:39.894Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:39.894Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.895Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.895Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:39.895Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:39.895Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:39.895Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:39.895Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:39.895Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:39.895Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:39.895Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:39.896Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:39.896Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:39.896Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:39.896Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:39.896Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:39.896Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:39.896Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:39.896Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:39.897Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:39.897Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:39.897Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:39.897Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:39.897Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:39.897Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:39.897Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:39.897Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:39.897Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:39.898Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:39.898Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:39.898Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.899Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.899Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:39.899Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:39.899Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:39.900Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:39.900Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:39.900Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:39.900Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:39.900Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:39.900Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:39.900Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:39.900Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:39.900Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:39.901Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:39.901Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.902Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:39.902Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:39.903Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:39.903Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:39.903Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:39.903Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:39.903Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:39.903Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:39.904Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:39.904Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:39.904Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.904Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:39.904Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.904Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:39.904Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:39.904Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:43.600Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.600Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.600Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.600Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.600Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.600Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.601Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.601Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.601Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.601Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.601Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.601Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.601Z] [debug] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.601Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.602Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.602Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.602Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:43.602Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:43.602Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.602Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.602Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:43.602Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:43.602Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:43.603Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:43.603Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:43.603Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:43.603Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:43.603Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:43.603Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:43.603Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:43.603Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:43.603Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:43.604Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:43.604Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:43.604Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:43.604Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:43.604Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:43.604Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:43.604Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:43.604Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:43.605Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:43.605Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:43.605Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:43.605Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:43.605Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:43.605Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:43.605Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:43.605Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:43.605Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:43.606Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:43.606Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:43.606Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:43.606Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:43.606Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:43.606Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:43.606Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:43.606Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:43.607Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:43.607Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:43.607Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:43.607Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:43.607Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:43.607Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:43.607Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:43.607Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:43.607Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:43.608Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:43.608Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.608Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:43.608Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:43.608Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:43.608Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:43.609Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:43.609Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:43.609Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:43.609Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.609Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.609Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.609Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.609Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.609Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.610Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.610Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.611Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.611Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.611Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.611Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:43.611Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:43.611Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:43.612Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:43.612Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:43.612Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:43.612Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.612Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.612Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:43.612Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:43.612Z] [debug] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.613Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.613Z] [debug] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.613Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.613Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.613Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.613Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.613Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.613Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.614Z] [debug] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.614Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.614Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.614Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.614Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.614Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:43.615Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:43.615Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:43.616Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:43.616Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:43.616Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:43.616Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:43.616Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:43.616Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:43.617Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:43.617Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.618Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:43.618Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:43.618Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.619Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:43.619Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:43.620Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:43.620Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:43.620Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:43.620Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:43.620Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:43.620Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:43.620Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:43.620Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:43.620Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:43.620Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:43.621Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:43.621Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.621Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.621Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.621Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:43.621Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:43.622Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:43.622Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:43.623Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:43.623Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:43.623Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:43.623Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:43.623Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:43.623Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:47.746Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.746Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.747Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.747Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.747Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.747Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.747Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.747Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.747Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.747Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.747Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.748Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.748Z] [debug] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.748Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.748Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.748Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.748Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:47.748Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:47.748Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.748Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.748Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:47.749Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:47.749Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:47.749Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:47.749Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:47.749Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:47.749Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:47.749Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:47.749Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:47.749Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:47.749Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:47.750Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:47.750Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:47.750Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:47.750Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:47.750Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:47.750Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:47.750Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:47.750Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:47.750Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:47.750Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:47.751Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:47.751Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:47.751Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:47.751Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:47.751Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:47.751Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:47.751Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:47.751Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:47.751Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:47.751Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:47.752Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:47.752Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:47.752Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:47.752Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:47.752Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:47.752Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:47.752Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:47.752Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:47.752Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:47.752Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:47.753Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:47.753Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:47.753Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:47.753Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:47.753Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.753Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.754Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:47.754Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:47.754Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:47.754Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:47.754Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:47.754Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:47.754Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:47.754Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:47.754Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.754Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.755Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.755Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.755Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.755Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.755Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:47.755Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:47.755Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.755Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.755Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.755Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.756Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.756Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.756Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.757Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.757Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.757Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.757Z] [debug] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:47.757Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:47.757Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:47.757Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:47.757Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:47.757Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:47.758Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.758Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.758Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:47.758Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:47.758Z] [debug] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.758Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.758Z] [debug] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.758Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.758Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.758Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.759Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.759Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.759Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.759Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.759Z] [debug] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.759Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.759Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.759Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.759Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.759Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.760Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.760Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:47.760Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.760Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:47.760Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:47.760Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:47.761Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:47.761Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:47.761Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:47.761Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:47.761Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:47.761Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:47.761Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:47.761Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:47.761Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:47.761Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:47.762Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:47.762Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:47.762Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:47.762Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:47.762Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:47.762Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:47.762Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:47.762Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:47.762Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:47.762Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:47.763Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:47.763Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:47.764Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.764Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:47.764Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:47.764Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:47.764Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:47.764Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:47.765Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:47.765Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:47.765Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:47.765Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:47.765Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:47.765Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.765Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.765Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:47.765Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:47.765Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:47.766Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:47.766Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:47.766Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:47.766Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:47.766Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:47.766Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:47.766Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:47.766Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:47.766Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:47.766Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:47.767Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:47.767Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:47.767Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:47.767Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.767Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.767Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.767Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:47.767Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.768Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:47.768Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.768Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:47.768Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.768Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:47.768Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:47.768Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:47.768Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:47.768Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:47.769Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:47.769Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.769Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:47.769Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:47.769Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:47.769Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.770Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:47.770Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.770Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:47.770Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:47.770Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:52.472Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.472Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.472Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.472Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.473Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.473Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.473Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.473Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.473Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.473Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.473Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.473Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.473Z] [debug] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.474Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.474Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.474Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.474Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:52.474Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:52.474Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.474Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.474Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:52.474Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:52.475Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:52.475Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:52.475Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:52.475Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:52.475Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:52.475Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:52.475Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:52.475Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:52.476Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:52.476Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:52.476Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:52.476Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:52.476Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:52.476Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:52.476Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:52.476Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:52.477Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:52.477Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:52.477Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:52.477Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:52.477Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:52.477Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:52.477Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:52.478Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:52.478Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:52.478Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:52.478Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:52.478Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:52.478Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:52.478Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:52.479Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:52.479Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:52.480Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:52.480Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:52.480Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:52.480Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:52.480Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:52.480Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:52.480Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:52.480Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:52.481Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:52.481Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:52.481Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:52.481Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:52.481Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:52.481Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:52.481Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:52.481Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:52.482Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.482Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.482Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:52.482Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:52.482Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:52.482Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:52.482Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:52.482Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:52.482Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:52.482Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:52.483Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.483Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.483Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.483Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.483Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.483Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.483Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:52.483Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:52.483Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.484Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.484Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.484Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.484Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.484Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.484Z] [debug] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.484Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.484Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.484Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.485Z] [debug] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.485Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.485Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.485Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.485Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.485Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.485Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.485Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.485Z] [debug] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:52.485Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:52.486Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:52.486Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:52.486Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:52.486Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:52.486Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.486Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.486Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:52.486Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:52.486Z] [debug] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.487Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.487Z] [debug] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.487Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.487Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.487Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.487Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.487Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.487Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.487Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.487Z] [debug] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.488Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.488Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.488Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.488Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.488Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.488Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.488Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.488Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.488Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.489Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:52.489Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:52.489Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.489Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.489Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:52.489Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:52.489Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:52.489Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:52.489Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:52.490Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:52.490Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:52.490Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:52.490Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:52.490Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:52.490Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:52.491Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:52.491Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:52.492Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:52.492Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:52.492Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:52.492Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:52.492Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:52.492Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:52.492Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:52.492Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:52.492Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:52.493Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:52.493Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:52.493Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:52.493Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.494Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.494Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:52.494Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:52.494Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:52.495Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:52.495Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:52.495Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:52.495Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:52.495Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:52.495Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:52.495Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:52.495Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:52.495Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.496Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:52.496Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:52.496Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:52.496Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:52.496Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:52.496Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:52.497Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:52.497Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:52.497Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:52.497Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:52.497Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:52.497Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:52.497Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.497Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.497Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.497Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.498Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.498Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.498Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:52.498Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:52.498Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:52.498Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.499Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:52.499Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.500Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:52.500Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:52.500Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:57.650Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.650Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.650Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.651Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.651Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.651Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.651Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.651Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.651Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.651Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.651Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.651Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.651Z] [debug] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:57.652Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "missing"
+
+[2024-12-22T12:49:57.652Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:57.653Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "missing"
+
+[2024-12-22T12:49:57.653Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "missing"
+
+[2024-12-22T12:49:57.653Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:57.653Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "missing"
+
+[2024-12-22T12:49:57.653Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:57.653Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "missing"
+
+[2024-12-22T12:49:57.654Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:57.654Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:57.655Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:57.655Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:57.655Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:57.655Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:57.655Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "missing"
+
+[2024-12-22T12:49:57.655Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:57.656Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "missing"
+
+[2024-12-22T12:49:57.656Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.657Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.657Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.658Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.658Z] [debug] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:57.659Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:57.659Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:57.660Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.660Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.660Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:57.660Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:57.660Z] [debug] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.660Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.660Z] [debug] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.660Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.661Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.661Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.661Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.661Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.661Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.661Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.661Z] [debug] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.662Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.662Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.662Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.662Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.662Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.662Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.662Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.662Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.663Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.663Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:57.663Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:57.663Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.663Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.663Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:57.663Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "missing"
+
+[2024-12-22T12:49:57.663Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:57.664Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "missing"
+
+[2024-12-22T12:49:57.664Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:57.664Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:49:57.664Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:57.664Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:49:57.664Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:57.664Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "missing"
+
+[2024-12-22T12:49:57.665Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:57.665Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "missing"
+
+[2024-12-22T12:49:57.665Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:57.665Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "missing"
+
+[2024-12-22T12:49:57.665Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:57.665Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "missing"
+
+[2024-12-22T12:49:57.666Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:57.666Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "missing"
+
+[2024-12-22T12:49:57.666Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:57.666Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:49:57.666Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:57.666Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "missing"
+
+[2024-12-22T12:49:57.666Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "missing"
+
+[2024-12-22T12:49:57.667Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:57.667Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:49:57.668Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "missing"
+
+[2024-12-22T12:49:57.668Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.669Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.669Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:57.669Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "missing"
+
+[2024-12-22T12:49:57.669Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:57.669Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "missing"
+
+[2024-12-22T12:49:57.669Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:57.669Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "missing"
+
+[2024-12-22T12:49:57.669Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:57.669Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "missing"
+
+[2024-12-22T12:49:57.669Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:57.670Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "missing"
+
+[2024-12-22T12:49:57.670Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.671Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:49:57.671Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:49:57.672Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:49:57.672Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:49:57.672Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:49:57.672Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:49:57.672Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:57.672Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:49:57.673Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:49:57.673Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:50:05.037Z] [debug] Status of ServiceAccount kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.037Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.037Z] [debug] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.037Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.037Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:05.038Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:05.038Z] [debug] Status of ServiceAccount kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.038Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.038Z] [debug] Status of ServiceAccount kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.038Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.038Z] [debug] Status of ServiceAccount kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.038Z] [verbose] [kubernetes] Status of ServiceAccount kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.038Z] [debug] Status of Secret kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.039Z] [verbose] [kubernetes] Status of Secret kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.039Z] [debug] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.039Z] [verbose] [kubernetes] Status of Secret alertmanager-kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.039Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "ready"
+
+[2024-12-22T12:50:05.039Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-config-dashboards is "ready"
+
+[2024-12-22T12:50:05.039Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.039Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.039Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "ready"
+
+[2024-12-22T12:50:05.039Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-datasource is "ready"
+
+[2024-12-22T12:50:05.039Z] [debug] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "ready"
+
+[2024-12-22T12:50:05.040Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-alertmanager-overview is "ready"
+
+[2024-12-22T12:50:05.040Z] [debug] Status of ConfigMap kube-prometheus-stack-apiserver is "ready"
+
+[2024-12-22T12:50:05.040Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-apiserver is "ready"
+
+[2024-12-22T12:50:05.040Z] [debug] Status of ConfigMap kube-prometheus-stack-cluster-total is "ready"
+
+[2024-12-22T12:50:05.040Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-cluster-total is "ready"
+
+[2024-12-22T12:50:05.040Z] [debug] Status of ConfigMap kube-prometheus-stack-controller-manager is "ready"
+
+[2024-12-22T12:50:05.040Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-controller-manager is "ready"
+
+[2024-12-22T12:50:05.040Z] [debug] Status of ConfigMap kube-prometheus-stack-etcd is "ready"
+
+[2024-12-22T12:50:05.040Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-etcd is "ready"
+
+[2024-12-22T12:50:05.041Z] [debug] Status of ConfigMap kube-prometheus-stack-grafana-overview is "ready"
+
+[2024-12-22T12:50:05.041Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-grafana-overview is "ready"
+
+[2024-12-22T12:50:05.041Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "ready"
+
+[2024-12-22T12:50:05.041Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-coredns is "ready"
+
+[2024-12-22T12:50:05.041Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "ready"
+
+[2024-12-22T12:50:05.041Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-cluster is "ready"
+
+[2024-12-22T12:50:05.041Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "ready"
+
+[2024-12-22T12:50:05.041Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-multicluster is "ready"
+
+[2024-12-22T12:50:05.041Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "ready"
+
+[2024-12-22T12:50:05.042Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-namespace is "ready"
+
+[2024-12-22T12:50:05.042Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "ready"
+
+[2024-12-22T12:50:05.042Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-node is "ready"
+
+[2024-12-22T12:50:05.042Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "ready"
+
+[2024-12-22T12:50:05.042Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-pod is "ready"
+
+[2024-12-22T12:50:05.042Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "ready"
+
+[2024-12-22T12:50:05.042Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workload is "ready"
+
+[2024-12-22T12:50:05.042Z] [debug] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "ready"
+
+[2024-12-22T12:50:05.042Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-k8s-resources-workloads-namespace is "ready"
+
+[2024-12-22T12:50:05.043Z] [debug] Status of ConfigMap kube-prometheus-stack-kubelet is "ready"
+
+[2024-12-22T12:50:05.043Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-kubelet is "ready"
+
+[2024-12-22T12:50:05.043Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "ready"
+
+[2024-12-22T12:50:05.043Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-pod is "ready"
+
+[2024-12-22T12:50:05.043Z] [debug] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "ready"
+
+[2024-12-22T12:50:05.043Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-namespace-by-workload is "ready"
+
+[2024-12-22T12:50:05.043Z] [debug] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "ready"
+
+[2024-12-22T12:50:05.043Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-cluster-rsrc-use is "ready"
+
+[2024-12-22T12:50:05.043Z] [debug] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "ready"
+
+[2024-12-22T12:50:05.043Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-node-rsrc-use is "ready"
+
+[2024-12-22T12:50:05.044Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-aix is "ready"
+
+[2024-12-22T12:50:05.044Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-aix is "ready"
+
+[2024-12-22T12:50:05.044Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "ready"
+
+[2024-12-22T12:50:05.044Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes-darwin is "ready"
+
+[2024-12-22T12:50:05.044Z] [debug] Status of ConfigMap kube-prometheus-stack-nodes is "ready"
+
+[2024-12-22T12:50:05.044Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-nodes is "ready"
+
+[2024-12-22T12:50:05.044Z] [debug] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "ready"
+
+[2024-12-22T12:50:05.044Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-persistentvolumesusage is "ready"
+
+[2024-12-22T12:50:05.044Z] [debug] Status of ConfigMap kube-prometheus-stack-pod-total is "ready"
+
+[2024-12-22T12:50:05.045Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-pod-total is "ready"
+
+[2024-12-22T12:50:05.045Z] [debug] Status of ConfigMap kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.045Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.045Z] [debug] Status of ConfigMap kube-prometheus-stack-proxy is "ready"
+
+[2024-12-22T12:50:05.045Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-proxy is "ready"
+
+[2024-12-22T12:50:05.045Z] [debug] Status of ConfigMap kube-prometheus-stack-scheduler is "ready"
+
+[2024-12-22T12:50:05.045Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-scheduler is "ready"
+
+[2024-12-22T12:50:05.045Z] [debug] Status of ConfigMap kube-prometheus-stack-workload-total is "ready"
+
+[2024-12-22T12:50:05.045Z] [verbose] [kubernetes] Status of ConfigMap kube-prometheus-stack-workload-total is "ready"
+
+[2024-12-22T12:50:05.045Z] [debug] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "ready"
+
+[2024-12-22T12:50:05.046Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-grafana-clusterrole is "ready"
+
+[2024-12-22T12:50:05.046Z] [debug] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.046Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.046Z] [debug] Status of ClusterRole kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.046Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.046Z] [debug] Status of ClusterRole kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.046Z] [verbose] [kubernetes] Status of ClusterRole kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.046Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "ready"
+
+[2024-12-22T12:50:05.046Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-grafana-clusterrolebinding is "ready"
+
+[2024-12-22T12:50:05.046Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.047Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.047Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.047Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.047Z] [debug] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.047Z] [verbose] [kubernetes] Status of ClusterRoleBinding kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.047Z] [debug] Status of Role kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.047Z] [verbose] [kubernetes] Status of Role kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.047Z] [debug] Status of RoleBinding kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.047Z] [verbose] [kubernetes] Status of RoleBinding kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.048Z] [debug] Status of Service kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.048Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.048Z] [debug] Status of Service kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.048Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.048Z] [debug] Status of Service kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:05.048Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:05.048Z] [debug] Status of Service kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.048Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.048Z] [debug] Status of Service kube-prometheus-stack-coredns is "ready"
+
+[2024-12-22T12:50:05.049Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-coredns is "ready"
+
+[2024-12-22T12:50:05.049Z] [debug] Status of Service kube-prometheus-stack-kube-controller-manager is "ready"
+
+[2024-12-22T12:50:05.049Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-controller-manager is "ready"
+
+[2024-12-22T12:50:05.049Z] [debug] Status of Service kube-prometheus-stack-kube-etcd is "ready"
+
+[2024-12-22T12:50:05.049Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-etcd is "ready"
+
+[2024-12-22T12:50:05.049Z] [debug] Status of Service kube-prometheus-stack-kube-proxy is "ready"
+
+[2024-12-22T12:50:05.049Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-proxy is "ready"
+
+[2024-12-22T12:50:05.049Z] [debug] Status of Service kube-prometheus-stack-kube-scheduler is "ready"
+
+[2024-12-22T12:50:05.049Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-kube-scheduler is "ready"
+
+[2024-12-22T12:50:05.050Z] [debug] Status of Service kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.050Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:05.050Z] [debug] Status of Service kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.050Z] [verbose] [kubernetes] Status of Service kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.050Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "deploying"
+
+[2024-12-22T12:50:05.050Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "deploying"
+
+[2024-12-22T12:50:05.050Z] [kubernetes] DaemonSet/kube-prometheus-stack-prometheus-node-exporter: Readiness probe failed: Get "http://192.168.1.201:9100/": dial tcp 192.168.1.201:9100: connect: connection refused
+
+[2024-12-22T12:50:05.051Z] [verbose] [kubernetes] DaemonSet/kube-prometheus-stack-prometheus-node-exporter: Readiness probe failed: Get "http://192.168.1.201:9100/": dial tcp 192.168.1.201:9100: connect: connection refused
+
+[2024-12-22T12:50:05.051Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:05.051Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:05.051Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Created container grafana-sc-datasources
+
+[2024-12-22T12:50:05.051Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-grafana: Created container grafana-sc-datasources
+
+[2024-12-22T12:50:05.052Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:05.052Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:05.052Z] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Pulling image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0"
+
+[2024-12-22T12:50:05.052Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Pulling image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0"
+
+[2024-12-22T12:50:05.052Z] [debug] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:05.052Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:05.053Z] [kubernetes] Deployment/kube-prometheus-stack-operator: Pulling image "quay.io/prometheus-operator/prometheus-operator:v0.78.2"
+
+[2024-12-22T12:50:05.053Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-operator: Pulling image "quay.io/prometheus-operator/prometheus-operator:v0.78.2"
+
+[2024-12-22T12:50:05.053Z] [debug] Status of Ingress kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.053Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:05.053Z] [debug] Status of Ingress kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.053Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.053Z] [debug] Status of Ingress kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.053Z] [verbose] [kubernetes] Status of Ingress kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.054Z] [debug] Status of Alertmanager kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.054Z] [verbose] [kubernetes] Status of Alertmanager kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:05.054Z] [debug] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "ready"
+
+[2024-12-22T12:50:05.054Z] [verbose] [kubernetes] Status of MutatingWebhookConfiguration kube-prometheus-stack-admission is "ready"
+
+[2024-12-22T12:50:05.054Z] [debug] Status of Prometheus kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.054Z] [verbose] [kubernetes] Status of Prometheus kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.054Z] [debug] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "ready"
+
+[2024-12-22T12:50:05.054Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-alertmanager.rules is "ready"
+
+[2024-12-22T12:50:05.054Z] [debug] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "ready"
+
+[2024-12-22T12:50:05.055Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-config-reloaders is "ready"
+
+[2024-12-22T12:50:05.055Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:50:05.055Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "missing"
+
+[2024-12-22T12:50:05.055Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:50:05.055Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "missing"
+
+[2024-12-22T12:50:05.055Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "ready"
+
+[2024-12-22T12:50:05.055Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-cpu-usage-seconds-tot is "ready"
+
+[2024-12-22T12:50:05.055Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "ready"
+
+[2024-12-22T12:50:05.055Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-cache is "ready"
+
+[2024-12-22T12:50:05.056Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "ready"
+
+[2024-12-22T12:50:05.056Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-rss is "ready"
+
+[2024-12-22T12:50:05.056Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "ready"
+
+[2024-12-22T12:50:05.056Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-swap is "ready"
+
+[2024-12-22T12:50:05.056Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "ready"
+
+[2024-12-22T12:50:05.056Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-memory-working-set-by is "ready"
+
+[2024-12-22T12:50:05.056Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:50:05.056Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "missing"
+
+[2024-12-22T12:50:05.057Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "ready"
+
+[2024-12-22T12:50:05.057Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.pod-owner is "ready"
+
+[2024-12-22T12:50:05.057Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "ready"
+
+[2024-12-22T12:50:05.057Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-availability.rules is "ready"
+
+[2024-12-22T12:50:05.057Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "ready"
+
+[2024-12-22T12:50:05.057Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-burnrate.rules is "ready"
+
+[2024-12-22T12:50:05.057Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "ready"
+
+[2024-12-22T12:50:05.057Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-histogram.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:50:05.058Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "missing"
+
+[2024-12-22T12:50:05.058Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-general.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-prometheus-node-recording.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "ready"
+
+[2024-12-22T12:50:05.058Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-scheduler.rules is "ready"
+
+[2024-12-22T12:50:05.059Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.059Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:05.059Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "ready"
+
+[2024-12-22T12:50:05.059Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubelet.rules is "ready"
+
+[2024-12-22T12:50:05.059Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "ready"
+
+[2024-12-22T12:50:05.059Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-apps is "ready"
+
+[2024-12-22T12:50:05.059Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "ready"
+
+[2024-12-22T12:50:05.059Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-resources is "ready"
+
+[2024-12-22T12:50:05.059Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "ready"
+
+[2024-12-22T12:50:05.060Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-storage is "ready"
+
+[2024-12-22T12:50:05.060Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "ready"
+
+[2024-12-22T12:50:05.060Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-apiserver is "ready"
+
+[2024-12-22T12:50:05.060Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "ready"
+
+[2024-12-22T12:50:05.060Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-controller-manager is "ready"
+
+[2024-12-22T12:50:05.060Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "ready"
+
+[2024-12-22T12:50:05.060Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kube-proxy is "ready"
+
+[2024-12-22T12:50:05.060Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "ready"
+
+[2024-12-22T12:50:05.061Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-kubelet is "ready"
+
+[2024-12-22T12:50:05.061Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "ready"
+
+[2024-12-22T12:50:05.061Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system-scheduler is "ready"
+
+[2024-12-22T12:50:05.061Z] [debug] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "ready"
+
+[2024-12-22T12:50:05.061Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kubernetes-system is "ready"
+
+[2024-12-22T12:50:05.061Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "ready"
+
+[2024-12-22T12:50:05.061Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter.rules is "ready"
+
+[2024-12-22T12:50:05.061Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-exporter is "ready"
+
+[2024-12-22T12:50:05.061Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-exporter is "ready"
+
+[2024-12-22T12:50:05.062Z] [debug] Status of PrometheusRule kube-prometheus-stack-node-network is "ready"
+
+[2024-12-22T12:50:05.062Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node-network is "ready"
+
+[2024-12-22T12:50:05.062Z] [debug] Status of PrometheusRule kube-prometheus-stack-node.rules is "ready"
+
+[2024-12-22T12:50:05.062Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-node.rules is "ready"
+
+[2024-12-22T12:50:05.062Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "ready"
+
+[2024-12-22T12:50:05.062Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus-operator is "ready"
+
+[2024-12-22T12:50:05.062Z] [debug] Status of PrometheusRule kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.062Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:05.062Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:50:05.063Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "missing"
+
+[2024-12-22T12:50:05.063Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:50:05.063Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "missing"
+
+[2024-12-22T12:50:05.063Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:50:05.063Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "missing"
+
+[2024-12-22T12:50:05.063Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:50:05.063Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "missing"
+
+[2024-12-22T12:50:05.063Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:50:05.063Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "missing"
+
+[2024-12-22T12:50:05.064Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:50:05.064Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "missing"
+
+[2024-12-22T12:50:05.064Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:50:05.064Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "missing"
+
+[2024-12-22T12:50:05.064Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:50:05.064Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "missing"
+
+[2024-12-22T12:50:05.064Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:50:05.064Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "missing"
+
+[2024-12-22T12:50:05.065Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:50:05.065Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "missing"
+
+[2024-12-22T12:50:05.065Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:50:05.065Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "missing"
+
+[2024-12-22T12:50:05.065Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:50:05.065Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "missing"
+
+[2024-12-22T12:50:05.065Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:50:05.065Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "missing"
+
+[2024-12-22T12:50:05.065Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:50:05.066Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "missing"
+
+[2024-12-22T12:50:10.565Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "deploying"
+
+[2024-12-22T12:50:10.565Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "deploying"
+
+[2024-12-22T12:50:10.565Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:10.565Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:10.566Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Pulling image "docker.io/grafana/grafana:11.3.1"
+
+[2024-12-22T12:50:10.566Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-grafana: Pulling image "docker.io/grafana/grafana:11.3.1"
+
+[2024-12-22T12:50:10.567Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:10.567Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:10.567Z] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Started container kube-state-metrics
+
+[2024-12-22T12:50:10.568Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Started container kube-state-metrics
+
+[2024-12-22T12:50:10.568Z] [debug] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:10.568Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:10.568Z] [debug] Status of PrometheusRule kube-prometheus-stack-etcd is "ready"
+
+[2024-12-22T12:50:10.568Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-etcd is "ready"
+
+[2024-12-22T12:50:10.568Z] [debug] Status of PrometheusRule kube-prometheus-stack-general.rules is "ready"
+
+[2024-12-22T12:50:10.568Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-general.rules is "ready"
+
+[2024-12-22T12:50:10.569Z] [debug] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "ready"
+
+[2024-12-22T12:50:10.569Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-k8s.rules.container-resource is "ready"
+
+[2024-12-22T12:50:10.569Z] [debug] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "ready"
+
+[2024-12-22T12:50:10.569Z] [verbose] [kubernetes] Status of PrometheusRule kube-prometheus-stack-kube-apiserver-slos is "ready"
+
+[2024-12-22T12:50:10.569Z] [debug] Status of ServiceMonitor kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:10.569Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:50:10.569Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:10.569Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:10.569Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:10.570Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:10.570Z] [debug] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:10.570Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-alertmanager is "ready"
+
+[2024-12-22T12:50:10.570Z] [debug] Status of ServiceMonitor kube-prometheus-stack-coredns is "ready"
+
+[2024-12-22T12:50:10.570Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-coredns is "ready"
+
+[2024-12-22T12:50:10.570Z] [debug] Status of ServiceMonitor kube-prometheus-stack-apiserver is "ready"
+
+[2024-12-22T12:50:10.570Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-apiserver is "ready"
+
+[2024-12-22T12:50:10.570Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "ready"
+
+[2024-12-22T12:50:10.570Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-controller-manager is "ready"
+
+[2024-12-22T12:50:10.570Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "ready"
+
+[2024-12-22T12:50:10.571Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-etcd is "ready"
+
+[2024-12-22T12:50:10.571Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "ready"
+
+[2024-12-22T12:50:10.571Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-proxy is "ready"
+
+[2024-12-22T12:50:10.571Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "ready"
+
+[2024-12-22T12:50:10.571Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kube-scheduler is "ready"
+
+[2024-12-22T12:50:10.571Z] [debug] Status of ServiceMonitor kube-prometheus-stack-kubelet is "ready"
+
+[2024-12-22T12:50:10.571Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-kubelet is "ready"
+
+[2024-12-22T12:50:10.571Z] [debug] Status of ServiceMonitor kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:10.571Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:10.571Z] [debug] Status of ServiceMonitor kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:10.572Z] [verbose] [kubernetes] Status of ServiceMonitor kube-prometheus-stack-prometheus is "ready"
+
+[2024-12-22T12:50:10.572Z] [debug] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "ready"
+
+[2024-12-22T12:50:10.572Z] [verbose] [kubernetes] Status of ValidatingWebhookConfiguration kube-prometheus-stack-admission is "ready"
+
+[2024-12-22T12:50:16.364Z] [debug] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:16.364Z] [verbose] [kubernetes] Status of DaemonSet kube-prometheus-stack-prometheus-node-exporter is "ready"
+
+[2024-12-22T12:50:16.365Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:16.365Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:16.365Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:16.365Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:16.365Z] [debug] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:16.365Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "deploying"
+
+[2024-12-22T12:50:22.855Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:22.855Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:22.855Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:22.855Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "deploying"
+
+[2024-12-22T12:50:22.856Z] [debug] Status of Deployment kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:22.856Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-operator is "ready"
+
+[2024-12-22T12:50:29.591Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:29.592Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:29.592Z] [debug] Status of Deployment kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:29.592Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-kube-state-metrics is "ready"
+
+[2024-12-22T12:50:36.876Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:36.877Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:44.580Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:44.581Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:52.788Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:50:52.788Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:01.500Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:01.500Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:01.501Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Readiness probe failed: Get "http://10.244.2.232:3000/api/health": dial tcp 10.244.2.232:3000: connect: connection refused
+
+[2024-12-22T12:51:01.501Z] [verbose] [kubernetes] Deployment/kube-prometheus-stack-grafana: Readiness probe failed: Get "http://10.244.2.232:3000/api/health": dial tcp 10.244.2.232:3000: connect: connection refused
+
+[2024-12-22T12:51:10.718Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:10.718Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:20.432Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:20.433Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "deploying"
+
+[2024-12-22T12:51:30.479Z] [verbose] [helm] NAME: kube-prometheus-stack
+
+[2024-12-22T12:51:30.479Z] [verbose] [helm] LAST DEPLOYED: Sun Dec 22 13:49:41 2024
+
+[2024-12-22T12:51:30.479Z] [verbose] [helm] NAMESPACE: default
+
+[2024-12-22T12:51:30.479Z] [verbose] [helm] STATUS: deployed
+
+[2024-12-22T12:51:30.479Z] [verbose] [helm] REVISION: 1
+
+[2024-12-22T12:51:30.480Z] [verbose] [helm] NOTES:
+
+[2024-12-22T12:51:30.480Z] [verbose] [helm] kube-prometheus-stack has been installed. Check its status by running:
+
+[2024-12-22T12:51:30.480Z] [verbose] [helm]   kubectl --namespace default get pods -l "release=kube-prometheus-stack"
+
+[2024-12-22T12:51:30.480Z] [verbose] [helm] 
+
+[2024-12-22T12:51:30.480Z] [verbose] [helm] Visit https://github.com/prometheus-operator/kube-prometheus for instructions on how to create & configure Alertmanager and Prometheus instances using the Operator.
+
+[2024-12-22T12:51:30.510Z] [debug] Status of Deployment kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:51:30.510Z] [verbose] [kubernetes] Status of Deployment kube-prometheus-stack-grafana is "ready"
+
+[2024-12-22T12:51:30.510Z] [verbose] [kubernetes] Resources ready
+
+[2024-12-22T12:51:30.510Z] [kubernetes] Resources ready
+
+[2024-12-22T12:51:31.910Z] Ingress: https://grafana.scadrial.lan
+
+[2024-12-22T12:51:31.910Z] Ingress: https://alertmanager.scadrial.lan
+
+[2024-12-22T12:51:31.911Z] Ingress: https://prometheus.scadrial.lan
+
+[2024-12-22T12:51:31.911Z] Done (took 122.5 sec)
+
+[2024-12-22T12:51:31.912Z] [verbose] Deploy type=helm name=kube-prometheus-stack is ready.
+
+[2024-12-22T12:51:31.964Z] Done! 
+
+[2024-12-22T12:51:31.967Z] [debug] Done flushing all events and log entries.
+
+[2024-12-22T12:51:32.017Z] [debug] Watcher: Initializing
+
+[2024-12-22T12:51:32.017Z] [debug] Watcher: Starting FSWatcher

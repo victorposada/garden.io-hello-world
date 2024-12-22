@@ -218,3 +218,262 @@ View command results at:
 
 https://app.garden.io/go/command/TcwOVjCoDR 
 
+
+[2024-12-22T12:45:29.933Z] Unable to load Garden project found at /home/hoid/Documents/garden.io-hello-world: Error: An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:45:29.942Z] Garden server has successfully started at port 9777
+
+
+[2024-12-22T12:45:30.108Z] Unable to authenticate against the Garden dashboard with the current session token.
+The dashboard will not be available until you authenticate again. Please try logging out with
+garden logout and back in again with garden login.
+
+[2024-12-22T12:45:37.560Z] Syncs started during this session may still be active when this command terminates. You can run garden sync stop '*' to stop all code syncs. Hint: To stop code syncing when exiting garden dev, use Ctrl-D or the exit command.
+→ Run garden util hide-warning dev-syncs-active to disable this message.
+
+[2024-12-22T12:46:41.109Z] 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 🌳  garden dev 🌳  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Good afternoon! Welcome to the Garden interactive development console.
+
+Here you can build, deploy, test and run anything in your project, start code syncing, stream live logs and more.
+
+Use the command line below to enter Garden commands. Type help to get a full list of commands.
+Use up/down arrow keys to scroll through your command history.
+    
+
+[2024-12-22T12:46:41.281Z] Unable to load Garden project found at /home/hoid/Documents/garden.io-hello-world: Error: An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:46:41.286Z] Garden server has successfully started at port 9777
+
+
+[2024-12-22T12:46:41.439Z] Unable to authenticate against the Garden dashboard with the current session token.
+The dashboard will not be available until you authenticate again. Please try logging out with
+garden logout and back in again with garden login.
+
+[2024-12-22T12:46:42.253Z] 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ Running deploy --logs command... ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+[2024-12-22T12:46:42.363Z] An error occurred while verifying client auth token with the Garden dashboard: Response code 401 (Unauthorized). Response status code: 401
+
+[2024-12-22T12:46:50.704Z] Syncs started during this session may still be active when this command terminates. You can run garden sync stop '*' to stop all code syncs. Hint: To stop code syncing when exiting garden dev, use Ctrl-D or the exit command.
+→ Run garden util hide-warning dev-syncs-active to disable this message.
+
+[2024-12-22T12:46:56.292Z] Resolving providers...
+
+[2024-12-22T12:46:56.470Z] Configuring provider...
+
+[2024-12-22T12:46:56.476Z] Provider configured
+
+[2024-12-22T12:46:56.480Z] Provider ready
+
+[2024-12-22T12:46:56.484Z] Configuring provider...
+
+[2024-12-22T12:46:56.485Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:46:56.486Z] Provider configured
+
+[2024-12-22T12:46:56.735Z] Provider ready
+
+[2024-12-22T12:46:56.738Z] Finished resolving providers (took 0.4 sec)
+
+[2024-12-22T12:46:56.739Z] Resolving actions and modules...
+
+[2024-12-22T12:46:56.803Z] Finished resolving graph (took 0.1 sec)
+
+[2024-12-22T12:46:56.803Z] Finished initializing Garden (took 0.9 sec)
+
+
+[2024-12-22T12:46:56.804Z] No Test actions were found. Aborting.
+
+[2024-12-22T12:47:02.974Z] Resolving providers...
+
+[2024-12-22T12:47:03.134Z] Configuring provider...
+
+[2024-12-22T12:47:03.141Z] Provider configured
+
+[2024-12-22T12:47:03.144Z] Provider status cached
+
+[2024-12-22T12:47:03.147Z] Configuring provider...
+
+[2024-12-22T12:47:03.148Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:47:03.149Z] Provider configured
+
+[2024-12-22T12:47:03.151Z] Provider status cached
+
+[2024-12-22T12:47:03.151Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:47:03.152Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:47:03.152Z] Resolving actions and modules...
+
+[2024-12-22T12:47:03.198Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:47:03.198Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:47:03.249Z] Done! 
+
+[2024-12-22T12:47:22.590Z] Resolving providers...
+
+[2024-12-22T12:47:22.749Z] Configuring provider...
+
+[2024-12-22T12:47:22.756Z] Provider configured
+
+[2024-12-22T12:47:22.759Z] Provider status cached
+
+[2024-12-22T12:47:22.761Z] Configuring provider...
+
+[2024-12-22T12:47:22.762Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:47:22.763Z] Provider configured
+
+[2024-12-22T12:47:22.765Z] Provider status cached
+
+[2024-12-22T12:47:22.766Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:47:22.766Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:47:22.766Z] Resolving actions and modules...
+
+[2024-12-22T12:47:22.811Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:47:22.812Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:47:22.825Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-22T12:47:22.825Z] Getting status for Deploy kube-prometheus-stack (type helm) at version v-5b8253ae70...
+
+[2024-12-22T12:47:23.126Z] Status is missing, kube-prometheus-stack will be deployed
+
+[2024-12-22T12:47:23.127Z] Deploying kube-prometheus-stack (type helm) at version v-5b8253ae70...
+
+[2024-12-22T12:47:23.402Z] Already deployed
+
+[2024-12-22T12:47:24.073Z] Failed (took 0.9 sec)
+
+[2024-12-22T12:47:24.381Z] 1 requested deploy action(s) failed!
+
+[2024-12-22T12:47:24.381Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-22T12:47:59.982Z] Resolving providers...
+
+[2024-12-22T12:48:00.155Z] Configuring provider...
+
+[2024-12-22T12:48:00.162Z] Provider configured
+
+[2024-12-22T12:48:00.167Z] Provider status cached
+
+[2024-12-22T12:48:00.170Z] Configuring provider...
+
+[2024-12-22T12:48:00.171Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:48:00.171Z] Provider configured
+
+[2024-12-22T12:48:00.173Z] Provider status cached
+
+[2024-12-22T12:48:00.173Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:48:00.173Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:48:00.174Z] Resolving actions and modules...
+
+[2024-12-22T12:48:00.216Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:48:00.217Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:48:00.232Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-22T12:48:00.233Z] Getting status for Deploy kube-prometheus-stack (type helm) at version v-a97766da07...
+
+[2024-12-22T12:48:00.430Z] Status is missing, kube-prometheus-stack will be deployed
+
+[2024-12-22T12:48:00.432Z] Deploying kube-prometheus-stack (type helm) at version v-a97766da07...
+
+[2024-12-22T12:48:00.697Z] Already deployed
+
+[2024-12-22T12:48:01.346Z] Failed (took 0.9 sec)
+
+[2024-12-22T12:48:01.654Z] 1 requested deploy action(s) failed!
+
+[2024-12-22T12:48:01.654Z] 
+See .garden/error.log for detailed error message
+
+[2024-12-22T12:49:29.022Z] Resolving providers...
+
+[2024-12-22T12:49:29.184Z] Configuring provider...
+
+[2024-12-22T12:49:29.191Z] Provider configured
+
+[2024-12-22T12:49:29.196Z] Provider status cached
+
+[2024-12-22T12:49:29.198Z] Configuring provider...
+
+[2024-12-22T12:49:29.199Z] You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.
+
+For guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s
+
+[2024-12-22T12:49:29.200Z] Provider configured
+
+[2024-12-22T12:49:29.202Z] Provider status cached
+
+[2024-12-22T12:49:29.203Z] Finished resolving providers (took 0.2 sec)
+
+[2024-12-22T12:49:29.203Z] All provider statuses were cached. Run with --force-refresh to force a refresh of provider statuses.
+
+[2024-12-22T12:49:29.203Z] Resolving actions and modules...
+
+[2024-12-22T12:49:29.246Z] Finished resolving graph (took 0 sec)
+
+[2024-12-22T12:49:29.246Z] Finished initializing Garden (took 0.6 sec)
+
+
+[2024-12-22T12:49:29.259Z] Getting status for Deploy db (type helm) at version v-b4bbcc161f...
+
+[2024-12-22T12:49:29.259Z] Getting status for Deploy kube-prometheus-stack (type helm) at version v-f672659235...
+
+[2024-12-22T12:49:29.405Z] Status is missing, kube-prometheus-stack will be deployed
+
+[2024-12-22T12:49:29.406Z] Deploying kube-prometheus-stack (type helm) at version v-f672659235...
+
+[2024-12-22T12:49:29.661Z] Already deployed
+
+[2024-12-22T12:49:36.514Z] [kubernetes] Waiting for resources to be ready...
+
+[2024-12-22T12:50:05.051Z] [kubernetes] DaemonSet/kube-prometheus-stack-prometheus-node-exporter: Readiness probe failed: Get "http://192.168.1.201:9100/": dial tcp 192.168.1.201:9100: connect: connection refused
+
+[2024-12-22T12:50:05.051Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Created container grafana-sc-datasources
+
+[2024-12-22T12:50:05.052Z] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Pulling image "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0"
+
+[2024-12-22T12:50:05.053Z] [kubernetes] Deployment/kube-prometheus-stack-operator: Pulling image "quay.io/prometheus-operator/prometheus-operator:v0.78.2"
+
+[2024-12-22T12:50:10.566Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Pulling image "docker.io/grafana/grafana:11.3.1"
+
+[2024-12-22T12:50:10.567Z] [kubernetes] Deployment/kube-prometheus-stack-kube-state-metrics: Started container kube-state-metrics
+
+[2024-12-22T12:51:01.501Z] [kubernetes] Deployment/kube-prometheus-stack-grafana: Readiness probe failed: Get "http://10.244.2.232:3000/api/health": dial tcp 10.244.2.232:3000: connect: connection refused
+
+[2024-12-22T12:51:30.510Z] [kubernetes] Resources ready
+
+[2024-12-22T12:51:31.910Z] Ingress: https://grafana.scadrial.lan
+
+[2024-12-22T12:51:31.910Z] Ingress: https://alertmanager.scadrial.lan
+
+[2024-12-22T12:51:31.911Z] Ingress: https://prometheus.scadrial.lan
+
+[2024-12-22T12:51:31.912Z] Done (took 122.5 sec)
+
+[2024-12-22T12:51:31.964Z] Done! 

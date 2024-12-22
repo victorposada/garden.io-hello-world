@@ -1,0 +1,41 @@
+{"msg":"Resolving providers...","section":"providers                 →","timestamp":"2024-12-22T12:46:56.289Z","level":"info"}
+{"msg":"Configuring provider...","section":"exec                      →","timestamp":"2024-12-22T12:46:56.470Z","level":"info"}
+{"msg":"Configuring provider...","section":"templated                 →","timestamp":"2024-12-22T12:46:56.471Z","level":"debug"}
+{"msg":"Configuring provider...","section":"container                 →","timestamp":"2024-12-22T12:46:56.471Z","level":"debug"}
+{"msg":"Provider configured","section":"exec                      →","timestamp":"2024-12-22T12:46:56.476Z","level":"info"}
+{"msg":"Provider configured","section":"templated                 →","timestamp":"2024-12-22T12:46:56.477Z","level":"debug"}
+{"msg":"Provider configured","section":"container                 →","timestamp":"2024-12-22T12:46:56.477Z","level":"debug"}
+{"msg":"Provider ready","section":"exec                      →","timestamp":"2024-12-22T12:46:56.480Z","level":"info"}
+{"msg":"Provider ready","section":"container                 →","timestamp":"2024-12-22T12:46:56.481Z","level":"debug"}
+{"msg":"Provider ready","section":"templated                 →","timestamp":"2024-12-22T12:46:56.481Z","level":"debug"}
+{"msg":"resolve provider container is ready.","section":"providers                 →","timestamp":"2024-12-22T12:46:56.482Z","level":"verbose"}
+{"msg":"Configuring provider...","section":"kubernetes                →","timestamp":"2024-12-22T12:46:56.483Z","level":"info"}
+{"msg":"You are using a remote Kubernetes cluster and did not configure a 'deploymentRegistry' in the kubernetes provider section of the project configuration.\n\nFor guidance in setting up remote Kubernetes clusters please refer to https://docs.garden.io/kubernetes-plugins/remote-k8s","section":"kubernetes                →","timestamp":"2024-12-22T12:46:56.485Z","level":"warn"}
+{"msg":"Provider configured","section":"kubernetes                →","timestamp":"2024-12-22T12:46:56.486Z","level":"info"}
+{"msg":"resolve provider templated is ready.","section":"providers                 →","timestamp":"2024-12-22T12:46:56.486Z","level":"verbose"}
+{"msg":"resolve provider exec is ready.","section":"providers                 →","timestamp":"2024-12-22T12:46:56.486Z","level":"verbose"}
+{"msg":"Kubernetes: Getting API resource info for group networking.k8s.io/v1","section":"kubernetes                →","timestamp":"2024-12-22T12:46:56.652Z","level":"debug"}
+{"msg":"Provider ready","section":"kubernetes                →","timestamp":"2024-12-22T12:46:56.735Z","level":"info"}
+{"msg":"resolve provider kubernetes is ready.","section":"providers                 →","timestamp":"2024-12-22T12:46:56.736Z","level":"verbose"}
+{"msg":"Finished resolving providers (took 0.4 sec)","section":"providers                 →","timestamp":"2024-12-22T12:46:56.738Z","level":"info"}
+{"msg":"Resolving actions and modules...","section":"graph                     →","timestamp":"2024-12-22T12:46:56.738Z","level":"info"}
+{"msg":"Building graph from 4 action configs and 0 group configs","section":"graph                     →","timestamp":"2024-12-22T12:46:56.742Z","level":"debug"}
+{"msg":"Retained 4 configs","section":"graph                     →","timestamp":"2024-12-22T12:46:56.743Z","level":"debug"}
+{"msg":"Got 4 action configs without action filter","section":"graph                     →","timestamp":"2024-12-22T12:46:56.770Z","level":"debug"}
+{"msg":"Finding minimal roots for 2 paths","section":"graph                     →","timestamp":"2024-12-22T12:46:56.770Z","level":"debug"}
+{"msg":"Scanning Deploy action db root at /home/hoid/Documents/garden.io-hello-world\n  → Includes: (none)\n  → Excludes: (none)","section":"git                       →","timestamp":"2024-12-22T12:46:56.782Z","level":"verbose"}
+{"msg":"Found 3 files in Deploy action db root /home/hoid/Documents/garden.io-hello-world (took 0.02 sec)","section":"git                       →","timestamp":"2024-12-22T12:46:56.798Z","level":"verbose"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres, filtering by 1 include and 1 exclude globs","section":"graph                     →","timestamp":"2024-12-22T12:46:56.799Z","level":"debug"}
+{"msg":"Include globs: **/*","section":"graph                     →","timestamp":"2024-12-22T12:46:56.799Z","level":"debug"}
+{"msg":"Exclude globs: **/.garden/**/*","section":"graph                     →","timestamp":"2024-12-22T12:46:56.799Z","level":"debug"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/postgres after glob matching","section":"graph                     →","timestamp":"2024-12-22T12:46:56.800Z","level":"debug"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack, filtering by 1 include and 1 exclude globs","section":"graph                     →","timestamp":"2024-12-22T12:46:56.800Z","level":"debug"}
+{"msg":"Include globs: **/*","section":"graph                     →","timestamp":"2024-12-22T12:46:56.800Z","level":"debug"}
+{"msg":"Exclude globs: **/.garden/**/*","section":"graph                     →","timestamp":"2024-12-22T12:46:56.801Z","level":"debug"}
+{"msg":"Found 1 files in path /home/hoid/Documents/garden.io-hello-world/kube-prometheus-stack after glob matching","section":"graph                     →","timestamp":"2024-12-22T12:46:56.801Z","level":"debug"}
+{"msg":"Finished resolving graph (took 0.1 sec)","section":"graph                     →","timestamp":"2024-12-22T12:46:56.803Z","level":"info"}
+{"msg":"Finished initializing Garden (took 0.9 sec)","section":"garden                    →","timestamp":"2024-12-22T12:46:56.803Z","level":"info"}
+{"msg":"No Test actions were found. Aborting.","section":"","timestamp":"2024-12-22T12:46:56.804Z","level":"warn"}
+{"msg":"Done flushing all events and log entries.","section":"","timestamp":"2024-12-22T12:46:56.805Z","level":"debug"}
+{"msg":"Watcher: Initializing","section":"","timestamp":"2024-12-22T12:46:56.856Z","level":"debug"}
+{"msg":"Watcher: Starting FSWatcher","section":"","timestamp":"2024-12-22T12:46:56.856Z","level":"debug"}
